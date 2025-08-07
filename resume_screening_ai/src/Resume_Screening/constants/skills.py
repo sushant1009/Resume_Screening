@@ -1,0 +1,22 @@
+skills_list = [
+    'python', 'java', 'c++', 'c#', 'javascript', 'typescript', 'go', 'ruby', 'php', 'swift', 'kotlin',
+    'html', 'css', 'react', 'angular', 'vue.js', 'node.js', 'bootstrap', 'tailwind css', 'wordpress',
+    'sql', 'mysql', 'postgresql', 'mongodb', 'sqlite', 'nosql', 'redis', 'oracle',
+    'machine learning', 'deep learning', 'data analysis', 'data visualization', 'pandas', 'numpy',
+    'matplotlib', 'seaborn', 'scikit-learn', 'tensorflow', 'keras', 'pytorch', 'nlp', 'computer vision',
+    'openai', 'huggingface', 'xgboost', 'lightgbm', 'excel', 'powerbi', 'tableau', 'looker',
+    'google data studio', 'sas', 'r', 'aws', 'azure', 'google cloud platform', 'docker', 'kubernetes',
+    'terraform', 'ansible', 'jenkins', 'github', 'ci/cd','cicd', 'ethical hacking', 'penetration testing',
+    'network security', 'firewalls', 'vulnerability assessment', 'incident response', 'kali linux',
+    'wireshark', 'agile', 'scrum', 'kanban', 'jira', 'confluence', 'trello', 'slack', 'project planning',
+    'stakeholder management', 'business analysis', 'market research', 'budgeting', 'forecasting',
+    'accounting', 'financial modeling', 'financial reporting', 'quickbooks', 'sap', 'erp',
+    'adobe photoshop', 'adobe illustrator', 'figma', 'sketch', 'adobe xd', 'canva', 'wireframing',
+    'prototyping', 'adobe premiere', 'after effects', 'final cut pro', 'blender', 'davinci resolve',
+    'research methodology', 'lab techniques', 'data interpretation', 'clinical trials', 'literature review',
+    'autocad', 'solidworks', 'matlab', 'simulink', 'ansys', 'revit', 'catia', 'emr',
+    'electronic health records', 'patient care', 'medical terminology', 'healthcare compliance',
+    'diagnosis coding', 'pharmacy management', 'communication', 'leadership', 'teamwork',
+    'problem solving', 'critical thinking', 'time management', 'adaptability', 'conflict resolution',
+    'creativity'
+]
