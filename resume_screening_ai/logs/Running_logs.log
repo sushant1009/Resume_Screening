@@ -1,0 +1,511 @@
+[2025-05-27 20:33:11,024] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-05-27 20:33:11,024] - ERROR : main  : name 'read_yaml' is not defined
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_01_Data_Ingestion.py", line 12, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\config\configuration.py", line 10, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^
+NameError: name 'read_yaml' is not defined
+[2025-05-27 20:33:57,923] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-05-27 20:33:57,993] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-05-27 20:33:57,994] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-05-27 20:33:57,995] - ERROR : main  : Empty yaml file : params.yaml
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\utils\common.py", line 20, in read_yaml
+    return ConfigBox(content)
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\box\box.py", line 259, in __init__
+    raise BoxValueError("First argument must be mapping or iterable")
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_01_Data_Ingestion.py", line 12, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\config\configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\utils\common.py", line 22, in read_yaml
+    raise ValueError(f"Empty yaml file : {path_to_yaml}")
+ValueError: Empty yaml file : params.yaml
+[2025-05-27 20:34:28,356] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-05-27 20:34:28,357] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-05-27 20:34:28,358] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-05-27 20:34:28,359] - ERROR : main  : Empty yaml file : params.yaml
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\utils\common.py", line 20, in read_yaml
+    return ConfigBox(content)
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\box\box.py", line 259, in __init__
+    raise BoxValueError("First argument must be mapping or iterable")
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_01_Data_Ingestion.py", line 12, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\config\configuration.py", line 12, in __init__
+    self.params = read_yaml(params_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\utils\common.py", line 22, in read_yaml
+    raise ValueError(f"Empty yaml file : {path_to_yaml}")
+ValueError: Empty yaml file : params.yaml
+[2025-05-27 20:35:18,668] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-05-27 20:35:18,670] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-05-27 20:35:18,679] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-05-27 20:35:18,692] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-05-27 20:35:18,693] - ERROR : main  : Empty yaml file : schema.yaml
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\utils\common.py", line 20, in read_yaml
+    return ConfigBox(content)
+           ^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\box\box.py", line 247, in __init__
+    raise BoxValueError("Cannot extrapolate Box from string")
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_01_Data_Ingestion.py", line 12, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\config\configuration.py", line 13, in __init__
+    self.schema = read_yaml(schema_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\utils\common.py", line 22, in read_yaml
+    raise ValueError(f"Empty yaml file : {path_to_yaml}")
+ValueError: Empty yaml file : schema.yaml
+[2025-05-27 20:35:38,602] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-05-27 20:35:38,604] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-05-27 20:35:38,605] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-05-27 20:35:38,607] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-05-27 20:35:38,607] - ERROR : main  : name 'create_directory' is not defined
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_01_Data_Ingestion.py", line 12, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\config\configuration.py", line 15, in __init__
+    create_directory([self.config.artifacts_root])
+    ^^^^^^^^^^^^^^^^
+NameError: name 'create_directory' is not defined
+[2025-05-27 20:36:17,738] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-05-27 20:36:17,741] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-05-27 20:36:17,741] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-05-27 20:36:17,743] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-05-27 20:36:17,743] - INFO : common  : directory created at artifacts
+[2025-05-27 20:36:17,744] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-05-27 20:36:17,745] - ERROR : main  : name 'os' is not defined
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_01_Data_Ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\components\Data_Ingestion.py", line 13, in download_file
+    if not os.path.exists(self.config.local_data_file):
+           ^^
+NameError: name 'os' is not defined
+[2025-05-27 20:37:03,593] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-05-27 20:37:03,596] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-05-27 20:37:03,597] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-05-27 20:37:03,599] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-05-27 20:37:03,600] - INFO : common  : directory created at artifacts
+[2025-05-27 20:37:03,601] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-05-27 20:37:03,602] - ERROR : main  : name 'request' is not defined
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_01_Data_Ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\components\Data_Ingestion.py", line 15, in download_file
+    filename, headers = request.urlretrieve(
+                        ^^^^^^^
+NameError: name 'request' is not defined
+[2025-05-27 20:38:42,435] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-05-27 20:38:42,438] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-05-27 20:38:42,438] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-05-27 20:38:42,440] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-05-27 20:38:42,440] - INFO : common  : directory created at artifacts
+[2025-05-27 20:38:42,440] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-05-27 20:38:43,626] - INFO : Data_Ingestion  : artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 391839
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "0d069081a21529e3e21c94ea952401e994d3e6a4bf7bfb50b781dce51af4bf13"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: B18F:38843D:28344F:513649:6835D57B
+Accept-Ranges: bytes
+Date: Tue, 27 May 2025 15:08:43 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100028-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1748358523.312502,VS0,VE322
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 0866c360249cb15799160501ef7ec571d732a4ee
+Expires: Tue, 27 May 2025 15:13:43 GMT
+Source-Age: 0
+
+
+[2025-05-27 20:38:43,629] - ERROR : main  : name 'zipfile' is not defined
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_01_Data_Ingestion.py", line 16, in main
+    data_ingestion.extract_zip_file()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\components\Data_Ingestion.py", line 29, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+         ^^^^^^^
+NameError: name 'zipfile' is not defined
+[2025-05-27 20:39:14,153] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-05-27 20:39:14,155] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-05-27 20:39:14,156] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-05-27 20:39:14,157] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-05-27 20:39:14,158] - INFO : common  : directory created at artifacts
+[2025-05-27 20:39:14,158] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-05-27 20:39:14,159] - ERROR : main  : name 'get_size' is not defined
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_01_Data_Ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\components\Data_Ingestion.py", line 23, in download_file
+    logger.info(f"File already exists of size: {get_size(Path(self.config.local_data_file))}")
+                                                ^^^^^^^^
+NameError: name 'get_size' is not defined
+[2025-05-27 20:39:34,935] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-05-27 20:39:34,937] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-05-27 20:39:34,938] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-05-27 20:39:34,939] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-05-27 20:39:34,940] - INFO : common  : directory created at artifacts
+[2025-05-27 20:39:34,940] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-05-27 20:39:34,941] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-05-27 20:39:34,961] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-05-31 23:00:20,479] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-05-31 23:00:20,497] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-05-31 23:00:20,520] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-05-31 23:00:20,522] - INFO : common  : directory created at artifacts
+[2025-05-31 23:00:20,524] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-05-31 23:01:36,324] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-05-31 23:01:36,326] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-05-31 23:01:36,328] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-05-31 23:01:36,330] - INFO : common  : directory created at artifacts
+[2025-05-31 23:01:36,332] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-05-31 23:30:18,390] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-05-31 23:30:18,438] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-05-31 23:30:18,439] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-05-31 23:30:18,441] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-05-31 23:30:18,442] - INFO : common  : directory created at artifacts
+[2025-05-31 23:30:18,443] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-05-31 23:30:18,444] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-05-31 23:30:18,512] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-05-31 23:30:18,513] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-05-31 23:30:18,516] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-05-31 23:30:18,517] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-05-31 23:30:18,519] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-05-31 23:30:18,522] - INFO : common  : directory created at artifacts
+[2025-05-31 23:30:18,524] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-05-31 23:30:18,748] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-06-01 19:45:12,632] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 19:45:12,667] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 19:45:12,682] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 19:45:12,697] - INFO : common  : directory created at artifacts
+[2025-06-01 19:45:34,848] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 19:45:34,851] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 19:45:34,854] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 19:45:34,856] - INFO : common  : directory created at artifacts
+[2025-06-01 19:49:33,932] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 19:49:33,935] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 19:49:33,938] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 19:49:33,941] - INFO : common  : directory created at artifacts
+[2025-06-01 19:53:52,749] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 19:53:52,753] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 19:53:52,756] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 19:53:52,758] - INFO : common  : directory created at artifacts
+[2025-06-01 19:53:52,760] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-06-01 19:54:22,899] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 19:54:22,903] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 19:54:22,906] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 19:54:22,908] - INFO : common  : directory created at artifacts
+[2025-06-01 20:00:45,647] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 20:00:45,653] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 20:00:45,656] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 20:00:45,658] - INFO : common  : directory created at artifacts
+[2025-06-01 20:00:45,717] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 20:00:45,841] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 20:00:45,846] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 20:00:45,849] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 20:00:45,852] - INFO : common  : directory created at artifacts
+[2025-06-01 20:00:45,858] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 20:14:12,004] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 20:14:12,008] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 20:14:12,010] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 20:14:12,012] - INFO : common  : directory created at artifacts
+[2025-06-01 20:14:12,015] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 20:15:19,427] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 20:15:19,430] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 20:15:19,432] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 20:15:19,435] - INFO : common  : directory created at artifacts
+[2025-06-01 20:15:19,436] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 20:15:29,651] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 20:15:29,654] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 20:15:29,657] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 20:15:29,658] - INFO : common  : directory created at artifacts
+[2025-06-01 20:15:29,660] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 20:15:58,550] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 20:15:58,553] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 20:15:58,556] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 20:15:58,558] - INFO : common  : directory created at artifacts
+[2025-06-01 20:15:58,561] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 20:20:07,085] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 20:20:07,088] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 20:20:07,091] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 20:20:07,094] - INFO : common  : directory created at artifacts
+[2025-06-01 20:20:07,096] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 20:20:07,258] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 20:20:07,261] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 20:20:07,264] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 20:20:07,267] - INFO : common  : directory created at artifacts
+[2025-06-01 20:20:07,269] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 20:20:21,106] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 20:20:21,109] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 20:20:21,112] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 20:20:21,114] - INFO : common  : directory created at artifacts
+[2025-06-01 20:20:21,116] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 21:20:52,621] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 21:20:52,626] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 21:20:52,630] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 21:20:52,632] - INFO : common  : directory created at artifacts
+[2025-06-01 21:20:52,634] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 21:21:05,906] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 21:21:05,910] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 21:21:05,912] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 21:21:05,914] - INFO : common  : directory created at artifacts
+[2025-06-01 21:21:05,915] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 21:24:24,563] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 21:24:24,567] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 21:24:24,570] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 21:24:24,573] - INFO : common  : directory created at artifacts
+[2025-06-01 21:24:24,576] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 21:25:48,026] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 21:25:48,030] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 21:25:48,033] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 21:25:48,034] - INFO : common  : directory created at artifacts
+[2025-06-01 21:25:48,037] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 21:27:00,026] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 21:27:00,029] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 21:27:00,031] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 21:27:00,034] - INFO : common  : directory created at artifacts
+[2025-06-01 21:27:00,036] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 21:29:07,654] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 21:29:07,658] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 21:29:07,661] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 21:29:07,663] - INFO : common  : directory created at artifacts
+[2025-06-01 21:29:07,664] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 21:30:45,071] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 21:30:45,075] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 21:30:45,077] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 21:30:45,080] - INFO : common  : directory created at artifacts
+[2025-06-01 21:30:45,083] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 21:32:33,772] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 21:32:33,775] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 21:32:33,777] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 21:32:33,779] - INFO : common  : directory created at artifacts
+[2025-06-01 21:32:33,781] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 21:33:14,149] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 21:33:14,151] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 21:33:14,154] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 21:33:14,155] - INFO : common  : directory created at artifacts
+[2025-06-01 21:33:14,157] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 22:29:40,305] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 22:29:40,309] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 22:29:40,311] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 22:29:40,313] - INFO : common  : directory created at artifacts
+[2025-06-01 22:29:40,316] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 22:36:56,240] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 22:36:56,243] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 22:36:56,245] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 22:36:56,248] - INFO : common  : directory created at artifacts
+[2025-06-01 22:36:56,250] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 22:38:24,423] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 22:38:24,427] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 22:38:24,430] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 22:38:24,432] - INFO : common  : directory created at artifacts
+[2025-06-01 22:38:24,434] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 22:39:36,365] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 22:39:36,368] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 22:39:36,370] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 22:39:36,372] - INFO : common  : directory created at artifacts
+[2025-06-01 22:39:36,374] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 22:41:25,870] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 22:41:25,873] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 22:41:25,876] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 22:41:25,878] - INFO : common  : directory created at artifacts
+[2025-06-01 22:41:25,881] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 22:44:34,700] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 22:44:34,703] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 22:44:34,706] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 22:44:34,708] - INFO : common  : directory created at artifacts
+[2025-06-01 22:44:34,710] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 22:54:42,824] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 22:54:42,828] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 22:54:42,830] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 22:54:42,833] - INFO : common  : directory created at artifacts
+[2025-06-01 22:54:42,835] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 22:57:35,152] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 22:57:35,156] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 22:57:35,158] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 22:57:35,159] - INFO : common  : directory created at artifacts
+[2025-06-01 22:57:35,161] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 22:58:38,993] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 22:58:38,996] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 22:58:38,999] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 22:58:39,001] - INFO : common  : directory created at artifacts
+[2025-06-01 22:58:39,003] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 22:58:50,408] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 22:58:50,411] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 22:58:50,414] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 22:58:50,416] - INFO : common  : directory created at artifacts
+[2025-06-01 22:58:50,419] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 22:59:30,221] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 22:59:30,224] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 22:59:30,227] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 22:59:30,228] - INFO : common  : directory created at artifacts
+[2025-06-01 22:59:30,230] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 22:59:47,111] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 22:59:47,114] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 22:59:47,117] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 22:59:47,119] - INFO : common  : directory created at artifacts
+[2025-06-01 22:59:47,122] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 23:02:10,479] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 23:02:10,482] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 23:02:10,485] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 23:02:10,488] - INFO : common  : directory created at artifacts
+[2025-06-01 23:02:10,490] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 23:02:21,930] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 23:02:21,933] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 23:02:21,936] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 23:02:21,938] - INFO : common  : directory created at artifacts
+[2025-06-01 23:02:21,940] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 23:06:19,481] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 23:06:19,485] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 23:06:19,487] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 23:06:19,489] - INFO : common  : directory created at artifacts
+[2025-06-01 23:06:19,604] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 23:09:32,134] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 23:09:32,137] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 23:09:32,140] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 23:09:32,142] - INFO : common  : directory created at artifacts
+[2025-06-01 23:09:32,144] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 23:22:32,660] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 23:22:32,663] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 23:22:32,666] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 23:22:32,668] - INFO : common  : directory created at artifacts
+[2025-06-01 23:22:32,669] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 23:37:37,477] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 23:37:37,480] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 23:37:37,483] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 23:37:37,485] - INFO : common  : directory created at artifacts
+[2025-06-01 23:37:37,487] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 23:47:32,177] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 23:47:32,180] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 23:47:32,183] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 23:47:32,185] - INFO : common  : directory created at artifacts
+[2025-06-01 23:47:32,187] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 23:47:56,416] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 23:47:56,419] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 23:47:56,422] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 23:47:56,424] - INFO : common  : directory created at artifacts
+[2025-06-01 23:47:56,427] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 23:49:08,245] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 23:49:08,248] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 23:49:08,251] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 23:49:08,253] - INFO : common  : directory created at artifacts
+[2025-06-01 23:49:08,255] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 23:50:43,630] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 23:50:43,634] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 23:50:43,637] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 23:50:43,639] - INFO : common  : directory created at artifacts
+[2025-06-01 23:50:43,642] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 23:52:41,669] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 23:52:41,672] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 23:52:41,675] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 23:52:41,677] - INFO : common  : directory created at artifacts
+[2025-06-01 23:52:41,679] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 23:53:37,511] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 23:53:37,514] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 23:53:37,517] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 23:53:37,518] - INFO : common  : directory created at artifacts
+[2025-06-01 23:53:37,520] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-01 23:54:35,323] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-01 23:54:35,326] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-01 23:54:35,329] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-01 23:54:35,331] - INFO : common  : directory created at artifacts
+[2025-06-01 23:54:35,333] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-02 15:19:29,396] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-02 15:19:29,402] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-02 15:19:29,408] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-02 15:19:29,411] - INFO : common  : directory created at artifacts
+[2025-06-02 15:19:29,414] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-03 22:57:20,789] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-03 22:57:20,875] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-03 22:57:20,907] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-03 22:57:20,912] - INFO : common  : directory created at artifacts
+[2025-06-03 22:57:20,933] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-03 23:09:19,143] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-03 23:09:19,145] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-03 23:09:19,148] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-03 23:09:19,150] - INFO : common  : directory created at artifacts
+[2025-06-03 23:09:19,152] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-04 18:36:38,129] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-06-04 18:36:38,133] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-06-04 18:36:38,138] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-06-04 18:36:38,140] - INFO : common  : directory created at artifacts
+[2025-06-04 18:36:38,144] - INFO : common  : directory created at artifacts/data_transformation
+[2025-06-04 18:37:11,476] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-06-04 18:37:11,477] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-06-04 18:37:18,794] - WARNING : file_download  : Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+[2025-07-17 19:06:25,723] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-07-17 19:06:25,765] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-07-17 19:06:25,798] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-07-17 19:06:25,801] - INFO : common  : directory created at artifacts
+[2025-07-17 19:06:25,806] - INFO : common  : directory created at artifacts/data_transformation
+[2025-07-17 19:07:38,558] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-07-17 19:07:38,560] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
