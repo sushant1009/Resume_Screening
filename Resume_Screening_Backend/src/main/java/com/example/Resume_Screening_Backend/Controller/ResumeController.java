@@ -32,7 +32,7 @@ public class ResumeController {
                                           @RequestParam("userId") String username,
                                           @RequestParam("role") String role) {
         try {
-            // ✅ Validate inputs
+         
             if (file == null || file.isEmpty()) {
                 return ResponseEntity.badRequest().body("Resume file is missing or empty.");
             }
@@ -46,13 +46,9 @@ public class ResumeController {
             if(user == null)
                 return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
                         .body("User Not Found: ");
-            // ✅ Save the file first
+           
             String filepath = fileStorageService.saveFile(file);
 
-            // ✅ Analyze resume (pass file bytes + role to Python)
-
-
-            // ✅ Create and save resume document
             ResumeDocument doc = new ResumeDocument();
             doc.setUserName(username.trim());
             doc.setRole(role.trim());
