@@ -12,7 +12,7 @@ import java.util.Optional;
 @Component
 public class AuthHelper {
 
-    // This could be replaced by Redis or DB-based token storage
+    
     private final Map<String, String> tokenStore;
 
     public AuthHelper(Map<String, String> tokenStore) {
