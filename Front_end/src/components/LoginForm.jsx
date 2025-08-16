@@ -15,13 +15,18 @@ const LoginForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8080/api/auth/login", form);
-      alert("Login successful!");
-      console.log(res.data); 
-    } catch (err) {
-      alert("Invalid credentials");
-      console.error(err);
-    }
+  const res = await axios.post(
+    "http://localhost:8080/api/auth/login",
+    form,
+    { withCredentials: true } // allow browser to store cookie
+  );
+  alert("Login successful!");
+  console.log(res.data);
+} catch (err) {
+  alert("Invalid credentials");
+  console.error(err);
+}
+
   };
 
   return (

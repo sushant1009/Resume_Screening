@@ -1,3 +1,6 @@
 COLUMNS:
   Category : object
   Resume : object
+
+TARGET:
+  shortlisted : int64

@@ -1,19 +1,19 @@
 package com.example.Resume_Screening_Backend.Entity;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
-
+public class Recruiter {
     @Id
     @Column(nullable = false,unique = true)
     private String username;
@@ -30,7 +30,4 @@ public class User {
     private String password;
 
     private LocalDateTime createdAt = LocalDateTime.now();
-
-    @OneToMany(mappedBy = "user")
-    private List<Applications> applications;
 }

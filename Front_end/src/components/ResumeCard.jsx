@@ -1,5 +1,5 @@
 import React from 'react';
-import { scoreResume } from '../utils/scoring';
+
 
 function ResumeCard({ resume }) {
   const score = scoreResume(resume);

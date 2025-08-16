@@ -1,0 +1,41 @@
+package com.example.Resume_Screening_Backend;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
+import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Component;
+import org.springframework.web.server.ResponseStatusException;
+
+import java.util.Arrays;
+import java.util.Map;
+import java.util.Optional;
+
+@Component
+public class AuthHelper {
+
+    // This could be replaced by Redis or DB-based token storage
+    private final Map<String, String> tokenStore;
+
+    public AuthHelper(Map<String, String> tokenStore) {
+        this.tokenStore = tokenStore;
+    }
+
+    public String getUsernameFromRequest(HttpServletRequest request) {
+        String token = Arrays.stream(Optional.ofNullable(request.getCookies())
+                        .orElse(new Cookie[0]))
+                .filter(c -> "auth_token".equals(c.getName()))
+                .map(Cookie::getValue)
+                .findFirst()
+                .orElse(null);
+
+        if (token == null) {
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Not logged in");
+        }
+
+        String username = tokenStore.get(token);
+        if (username == null) {
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Invalid token");
+        }
+
+        return username;
+    }
+}

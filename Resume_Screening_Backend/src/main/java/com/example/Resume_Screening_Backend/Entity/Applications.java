@@ -1,28 +1,35 @@
 package com.example.Resume_Screening_Backend.Entity;
 
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class Resume {
+@NoArgsConstructor
+public class Applications {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String fileName;
-    private String filePath;
-
-    private LocalDateTime uploadedAt = LocalDateTime.now();
+    @ManyToOne
+    @JoinColumn(name = "username", nullable = false)
+    private User user;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
-}
+    @JoinColumn(name = "jobId", nullable = false)
+    private Job job;
 
+    private LocalDateTime appliedAt = LocalDateTime.now();
+
+    private Date lastDate;
+
+    private String status = "PENDING";
+}
