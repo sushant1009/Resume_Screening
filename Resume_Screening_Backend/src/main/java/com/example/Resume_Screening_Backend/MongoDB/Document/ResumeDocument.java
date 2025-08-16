@@ -23,11 +23,12 @@ public class ResumeDocument {
     private String id;
 
     private String  userName;
+    private String role;
     private String originalFileName;
     private String filePath;
-    private String extractedText;
-    private List<String> matchedSkills;
     private double score;
+    private Integer experience;
+    private List<String> skills;
     private String remarks;
     @JsonIgnore
     private LocalDateTime uploadedAt = LocalDateTime.now();

@@ -509,3 +509,1143 @@ x==========x
 [2025-07-17 19:06:25,806] - INFO : common  : directory created at artifacts/data_transformation
 [2025-07-17 19:07:38,558] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
 [2025-07-17 19:07:38,560] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 14:29:57,488] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 14:29:57,515] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 14:29:57,530] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 14:29:57,533] - INFO : common  : directory created at artifacts
+[2025-08-09 14:29:57,536] - INFO : common  : directory created at artifacts/data_transformation
+[2025-08-09 14:31:03,433] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-09 14:31:03,435] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 15:06:53,912] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-09 15:06:53,918] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 15:07:01,206] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-09 15:07:01,229] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 15:07:01,229] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 15:07:01,231] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 15:07:01,232] - INFO : common  : directory created at artifacts
+[2025-08-09 15:07:01,232] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 15:07:01,233] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-08-09 15:07:01,345] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-09 15:07:01,345] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-09 15:07:01,347] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 15:07:01,348] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 15:07:01,349] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 15:07:01,350] - INFO : common  : directory created at artifacts
+[2025-08-09 15:07:01,350] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 15:07:01,730] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-09 15:07:01,731] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-09 15:07:01,732] - ERROR : main  : name 'Configuration' is not defined
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 32, in <module>
+    data_transformation.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_03_Data_Transformation.py", line 34, in main
+    raise e
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_03_Data_Transformation.py", line 15, in main
+    config = Configuration()
+             ^^^^^^^^^^^^^
+NameError: name 'Configuration' is not defined
+[2025-08-09 15:10:39,703] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-09 15:10:39,703] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 15:10:44,460] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-09 15:10:44,463] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 15:10:44,465] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 15:10:44,466] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 15:10:44,467] - INFO : common  : directory created at artifacts
+[2025-08-09 15:10:44,467] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 15:10:44,467] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-08-09 15:10:44,483] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-09 15:10:44,484] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-09 15:10:44,487] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 15:10:44,489] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 15:10:44,490] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 15:10:44,491] - INFO : common  : directory created at artifacts
+[2025-08-09 15:10:44,491] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 15:10:44,753] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-09 15:10:44,753] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-09 15:10:44,757] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 15:10:44,758] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 15:10:44,760] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 15:10:44,760] - INFO : common  : directory created at artifacts
+[2025-08-09 15:10:44,761] - INFO : common  : directory created at artifacts/data_transformation
+[2025-08-09 15:10:45,324] - ERROR : main  : name 'skills_list' is not defined
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 32, in <module>
+    data_transformation.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_03_Data_Transformation.py", line 34, in main
+    raise e
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_03_Data_Transformation.py", line 20, in main
+    data['extracted_skills'] = data['cleaned_text'].apply(lambda x: data_transformation.extract_skills_from_cleaned_text(x, skills_list))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\pandas\core\series.py", line 4924, in apply
+    ).apply()
+      ^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\pandas\core\apply.py", line 1427, in apply
+    return self.apply_standard()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\pandas\core\apply.py", line 1507, in apply_standard
+    mapped = obj._map_values(
+             ^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\pandas\core\base.py", line 921, in _map_values
+    return algorithms.map_array(arr, mapper, na_action=na_action, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\pandas\core\algorithms.py", line 1743, in map_array
+    return lib.map_infer(values, mapper, convert=convert)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "lib.pyx", line 2972, in pandas._libs.lib.map_infer
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_03_Data_Transformation.py", line 20, in <lambda>
+    data['extracted_skills'] = data['cleaned_text'].apply(lambda x: data_transformation.extract_skills_from_cleaned_text(x, skills_list))
+                                                                                                                            ^^^^^^^^^^^
+NameError: name 'skills_list' is not defined
+[2025-08-09 15:12:21,149] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-09 15:12:21,150] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 15:13:24,232] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-09 15:13:24,233] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 15:13:28,793] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-09 15:13:28,795] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 15:13:28,796] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 15:13:28,797] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 15:13:28,798] - INFO : common  : directory created at artifacts
+[2025-08-09 15:13:28,799] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 15:13:28,800] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-08-09 15:13:28,821] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-09 15:13:28,823] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-09 15:13:28,827] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 15:13:28,828] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 15:13:28,830] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 15:13:28,831] - INFO : common  : directory created at artifacts
+[2025-08-09 15:13:28,831] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 15:13:29,050] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-09 15:13:29,051] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-09 15:13:29,056] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 15:13:29,058] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 15:13:29,060] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 15:13:29,062] - INFO : common  : directory created at artifacts
+[2025-08-09 15:13:29,062] - INFO : common  : directory created at artifacts/data_transformation
+[2025-08-09 15:16:14,770] - ERROR : main  : 'DataTransformation' object has no attribute 'traintrain_test_splitting'
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 32, in <module>
+    data_transformation.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_03_Data_Transformation.py", line 35, in main
+    raise e
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_03_Data_Transformation.py", line 32, in main
+    data_transformation.traintrain_test_splitting()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataTransformation' object has no attribute 'traintrain_test_splitting'
+[2025-08-09 15:17:35,562] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-09 15:17:35,563] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 15:17:39,922] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-09 15:17:39,925] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 15:17:39,926] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 15:17:39,928] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 15:17:39,929] - INFO : common  : directory created at artifacts
+[2025-08-09 15:17:39,929] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 15:17:39,930] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-08-09 15:17:39,943] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-09 15:17:39,944] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-09 15:17:39,948] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 15:17:39,949] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 15:17:39,950] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 15:17:39,951] - INFO : common  : directory created at artifacts
+[2025-08-09 15:17:39,951] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 15:17:40,136] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-09 15:17:40,136] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-09 15:17:40,140] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 15:17:40,141] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 15:17:40,142] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 15:17:40,142] - INFO : common  : directory created at artifacts
+[2025-08-09 15:17:40,142] - INFO : common  : directory created at artifacts/data_transformation
+[2025-08-09 15:20:20,952] - INFO : Data_Transformation  : Splitted data into Training and Testing Sets
+[2025-08-09 15:20:20,955] - INFO : Data_Transformation  : Train data shape : (769, 2)
+[2025-08-09 15:20:20,956] - INFO : Data_Transformation  : Test data shape : (193, 2)
+[2025-08-09 15:20:20,959] - INFO : main  : >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[2025-08-09 16:55:59,623] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-09 16:55:59,624] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 16:56:05,710] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-09 16:56:05,713] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 16:56:05,714] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 16:56:05,715] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 16:56:05,716] - INFO : common  : directory created at artifacts
+[2025-08-09 16:56:05,717] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 16:56:05,717] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-08-09 16:56:05,756] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-09 16:56:05,756] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-09 16:56:05,759] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 16:56:05,760] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 16:56:05,761] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 16:56:05,762] - INFO : common  : directory created at artifacts
+[2025-08-09 16:56:05,763] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 16:56:06,065] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-09 16:56:06,066] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-09 16:56:06,070] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 16:56:06,070] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 16:56:06,071] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 16:56:06,072] - INFO : common  : directory created at artifacts
+[2025-08-09 16:56:06,072] - INFO : common  : directory created at artifacts/data_transformation
+[2025-08-09 16:58:50,532] - INFO : Data_Transformation  : Splitted data into Training and Testing Sets
+[2025-08-09 16:58:50,533] - INFO : Data_Transformation  : Train data shape : (769, 10)
+[2025-08-09 16:58:50,534] - INFO : Data_Transformation  : Test data shape : (193, 10)
+[2025-08-09 16:58:50,535] - INFO : main  : >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[2025-08-09 17:05:13,173] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-09 17:05:13,173] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 17:05:17,608] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-09 17:05:17,610] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 17:05:17,611] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 17:05:17,612] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 17:05:17,613] - INFO : common  : directory created at artifacts
+[2025-08-09 17:05:17,613] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 17:05:18,490] - INFO : Data_Ingestion  : artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 391839
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "0d069081a21529e3e21c94ea952401e994d3e6a4bf7bfb50b781dce51af4bf13"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 08B8:1EAD63:3313A:7CE33:68973270
+Accept-Ranges: bytes
+Date: Sat, 09 Aug 2025 11:35:19 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100031-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1754739320.535446,VS0,VE275
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 9d8a86d16a1ea1752ad6fe8754a069705b042521
+Expires: Sat, 09 Aug 2025 11:40:19 GMT
+Source-Age: 0
+
+
+[2025-08-09 17:05:18,532] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-09 17:05:18,551] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-09 17:05:18,556] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 17:05:18,569] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 17:05:18,591] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 17:05:18,605] - INFO : common  : directory created at artifacts
+[2025-08-09 17:05:18,636] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 17:05:18,899] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-09 17:05:18,900] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-09 17:05:18,903] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 17:05:18,905] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 17:05:18,906] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 17:05:18,907] - INFO : common  : directory created at artifacts
+[2025-08-09 17:05:18,908] - INFO : common  : directory created at artifacts/data_transformation
+[2025-08-09 17:08:01,176] - INFO : Data_Transformation  : Splitted data into Training and Testing Sets
+[2025-08-09 17:08:01,176] - INFO : Data_Transformation  : Train data shape : (769, 10)
+[2025-08-09 17:08:01,177] - INFO : Data_Transformation  : Test data shape : (193, 10)
+[2025-08-09 17:08:01,177] - INFO : main  : >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[2025-08-09 17:12:17,777] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-09 17:12:17,779] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 17:12:22,183] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-09 17:12:22,238] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 17:12:22,240] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 17:12:22,242] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 17:12:22,243] - INFO : common  : directory created at artifacts
+[2025-08-09 17:12:22,244] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 17:12:22,245] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-08-09 17:12:22,265] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-09 17:12:22,266] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-09 17:12:22,269] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 17:12:22,270] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 17:12:22,274] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 17:12:22,276] - INFO : common  : directory created at artifacts
+[2025-08-09 17:12:22,276] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 17:12:22,480] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-09 17:12:22,481] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-09 17:12:22,485] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 17:12:22,486] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 17:12:22,488] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 17:12:22,488] - INFO : common  : directory created at artifacts
+[2025-08-09 17:12:22,489] - INFO : common  : directory created at artifacts/data_transformation
+[2025-08-09 17:12:24,536] - INFO : Data_Transformation  : Splitted data into Training and Testing Sets
+[2025-08-09 17:12:24,537] - INFO : Data_Transformation  : Train data shape : (769, 9)
+[2025-08-09 17:12:24,537] - INFO : Data_Transformation  : Test data shape : (193, 9)
+[2025-08-09 17:12:24,538] - INFO : main  : >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[2025-08-09 17:14:30,375] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-09 17:14:30,375] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 17:14:36,359] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-09 17:14:36,374] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 17:14:36,377] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 17:14:36,380] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 17:14:36,384] - INFO : common  : directory created at artifacts
+[2025-08-09 17:14:36,388] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 17:14:36,390] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-08-09 17:14:36,442] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-09 17:14:36,443] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-09 17:14:36,446] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 17:14:36,451] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 17:14:36,454] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 17:14:36,455] - INFO : common  : directory created at artifacts
+[2025-08-09 17:14:36,456] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 17:14:36,823] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-09 17:14:36,824] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-09 17:14:36,827] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 17:14:36,827] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 17:14:36,829] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 17:14:36,830] - INFO : common  : directory created at artifacts
+[2025-08-09 17:14:36,831] - INFO : common  : directory created at artifacts/data_transformation
+[2025-08-09 17:14:39,886] - INFO : Data_Transformation  : Splitted data into Training and Testing Sets
+[2025-08-09 17:14:39,886] - INFO : Data_Transformation  : Train data shape : (769, 9)
+[2025-08-09 17:14:39,887] - INFO : Data_Transformation  : Test data shape : (193, 9)
+[2025-08-09 17:14:39,888] - INFO : main  : >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[2025-08-09 17:17:54,278] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-09 17:17:54,279] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 17:17:58,665] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-09 17:17:58,668] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 17:17:58,669] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 17:17:58,670] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 17:17:58,671] - INFO : common  : directory created at artifacts
+[2025-08-09 17:17:58,671] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 17:17:59,549] - INFO : Data_Ingestion  : artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 391839
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "0d069081a21529e3e21c94ea952401e994d3e6a4bf7bfb50b781dce51af4bf13"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 08B8:1EAD63:3313A:7CE33:68973270
+Accept-Ranges: bytes
+Date: Sat, 09 Aug 2025 11:48:00 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100034-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1754740081.632718,VS0,VE231
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 50d105a1cb32b9b4ee7b4a4d5abd37b2ab8c49da
+Expires: Sat, 09 Aug 2025 11:53:00 GMT
+Source-Age: 0
+
+
+[2025-08-09 17:17:59,603] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-09 17:17:59,603] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-09 17:17:59,607] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 17:17:59,608] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 17:17:59,610] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 17:17:59,610] - INFO : common  : directory created at artifacts
+[2025-08-09 17:17:59,611] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 17:17:59,804] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-09 17:17:59,804] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-09 17:17:59,807] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 17:17:59,808] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 17:17:59,810] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 17:17:59,811] - INFO : common  : directory created at artifacts
+[2025-08-09 17:17:59,813] - INFO : common  : directory created at artifacts/data_transformation
+[2025-08-09 17:20:39,196] - INFO : Data_Transformation  : Splitted data into Training and Testing Sets
+[2025-08-09 17:20:39,197] - INFO : Data_Transformation  : Train data shape : (769, 10)
+[2025-08-09 17:20:39,198] - INFO : Data_Transformation  : Test data shape : (193, 10)
+[2025-08-09 17:20:39,199] - INFO : main  : >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[2025-08-09 23:10:01,355] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-09 23:10:01,369] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 23:10:08,941] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-09 23:10:08,952] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 23:10:08,965] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 23:10:08,967] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 23:10:08,968] - INFO : common  : directory created at artifacts
+[2025-08-09 23:10:08,969] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 23:10:08,969] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-08-09 23:10:09,040] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-09 23:10:09,041] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-09 23:10:09,045] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 23:10:09,046] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 23:10:09,047] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 23:10:09,048] - INFO : common  : directory created at artifacts
+[2025-08-09 23:10:09,049] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 23:10:09,220] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-09 23:10:09,221] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-09 23:10:09,226] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 23:10:09,227] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 23:10:09,229] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 23:10:09,229] - INFO : common  : directory created at artifacts
+[2025-08-09 23:10:09,229] - INFO : common  : directory created at artifacts/data_transformation
+[2025-08-09 23:12:18,195] - INFO : Data_Transformation  : Splitted data into Training and Testing Sets
+[2025-08-09 23:12:18,196] - INFO : Data_Transformation  : Train data shape : (769, 10)
+[2025-08-09 23:12:18,196] - INFO : Data_Transformation  : Test data shape : (193, 10)
+[2025-08-09 23:12:18,197] - INFO : main  : >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[2025-08-09 23:22:30,884] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-09 23:22:30,884] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 23:22:35,264] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-09 23:22:35,267] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 23:22:35,267] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 23:22:35,268] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 23:22:35,269] - INFO : common  : directory created at artifacts
+[2025-08-09 23:22:35,270] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 23:22:35,270] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-08-09 23:22:35,287] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-09 23:22:35,287] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-09 23:22:35,291] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 23:22:35,292] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 23:22:35,294] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 23:22:35,295] - INFO : common  : directory created at artifacts
+[2025-08-09 23:22:35,296] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 23:22:35,485] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-09 23:22:35,486] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-09 23:22:35,489] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 23:22:35,490] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 23:22:35,492] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 23:22:35,492] - INFO : common  : directory created at artifacts
+[2025-08-09 23:22:35,493] - INFO : common  : directory created at artifacts/data_transformation
+[2025-08-09 23:24:25,797] - INFO : Data_Transformation  : Splitted data into Training and Testing Sets
+[2025-08-09 23:24:25,836] - INFO : Data_Transformation  : Train data shape : (769, 6)
+[2025-08-09 23:24:25,849] - INFO : Data_Transformation  : Test data shape : (193, 6)
+[2025-08-09 23:24:25,857] - INFO : main  : >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[2025-08-09 23:56:19,553] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-09 23:56:19,564] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 23:56:25,416] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-09 23:56:25,430] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 23:56:25,431] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 23:56:25,432] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 23:56:25,433] - INFO : common  : directory created at artifacts
+[2025-08-09 23:56:25,434] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 23:56:25,434] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-08-09 23:56:25,486] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-09 23:56:25,487] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-09 23:56:25,491] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 23:56:25,492] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 23:56:25,493] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 23:56:25,495] - INFO : common  : directory created at artifacts
+[2025-08-09 23:56:25,496] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 23:56:25,687] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-09 23:56:25,688] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-09 23:56:25,694] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 23:56:25,696] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 23:56:25,699] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 23:56:25,700] - INFO : common  : directory created at artifacts
+[2025-08-09 23:56:25,701] - INFO : common  : directory created at artifacts/data_transformation
+[2025-08-09 23:58:19,668] - ERROR : main  : name 'df' is not defined
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 32, in <module>
+    data_transformation.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_03_Data_Transformation.py", line 37, in main
+    raise e
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_03_Data_Transformation.py", line 34, in main
+    data_transformation.train_test_splitting()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\components\Data_Transformation.py", line 109, in train_test_splitting
+    (df['experience_score'] >= 0.6) &
+    ^^
+NameError: name 'df' is not defined
+[2025-08-09 23:59:53,420] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-09 23:59:53,421] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-09 23:59:58,041] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-09 23:59:58,045] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 23:59:58,046] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 23:59:58,048] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 23:59:58,048] - INFO : common  : directory created at artifacts
+[2025-08-09 23:59:58,049] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 23:59:58,050] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-08-09 23:59:58,073] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-09 23:59:58,073] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-09 23:59:58,077] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 23:59:58,078] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 23:59:58,080] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 23:59:58,080] - INFO : common  : directory created at artifacts
+[2025-08-09 23:59:58,081] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-09 23:59:58,250] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-09 23:59:58,250] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-09 23:59:58,253] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-09 23:59:58,255] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-09 23:59:58,257] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-09 23:59:58,258] - INFO : common  : directory created at artifacts
+[2025-08-09 23:59:58,259] - INFO : common  : directory created at artifacts/data_transformation
+[2025-08-10 00:01:49,407] - INFO : Data_Transformation  : Splitted data into Training and Testing Sets
+[2025-08-10 00:01:49,407] - INFO : Data_Transformation  : Train data shape : (769, 7)
+[2025-08-10 00:01:49,407] - INFO : Data_Transformation  : Test data shape : (193, 7)
+[2025-08-10 00:01:49,408] - INFO : main  : >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[2025-08-10 00:21:20,744] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:21:20,761] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:21:20,764] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:21:20,766] - INFO : common  : directory created at artifacts
+[2025-08-10 00:21:20,768] - INFO : common  : directory created at artifacts/models
+[2025-08-10 00:21:20,841] - INFO : 1842617632  : Model training completed and saved successfully.
+[2025-08-10 00:38:23,945] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-10 00:38:23,946] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-10 00:38:29,453] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-10 00:38:29,456] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:38:29,458] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:38:29,460] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:38:29,461] - INFO : common  : directory created at artifacts
+[2025-08-10 00:38:29,462] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-10 00:38:29,463] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-08-10 00:38:29,510] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-10 00:38:29,511] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-10 00:38:29,517] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:38:29,519] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:38:29,521] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:38:29,525] - INFO : common  : directory created at artifacts
+[2025-08-10 00:38:29,527] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-10 00:38:29,735] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-10 00:38:29,735] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-10 00:38:29,743] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:38:29,745] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:38:29,747] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:38:29,748] - INFO : common  : directory created at artifacts
+[2025-08-10 00:38:29,749] - INFO : common  : directory created at artifacts/data_transformation
+[2025-08-10 00:40:23,565] - INFO : Data_Transformation  : Splitted data into Training and Testing Sets
+[2025-08-10 00:40:23,565] - INFO : Data_Transformation  : Train data shape : (769, 7)
+[2025-08-10 00:40:23,566] - INFO : Data_Transformation  : Test data shape : (193, 7)
+[2025-08-10 00:40:23,567] - INFO : main  : >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[2025-08-10 00:40:23,567] - INFO : main  : >>>>>> stage Model Training stage started <<<<<<
+[2025-08-10 00:40:23,571] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:40:23,571] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:40:23,573] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:40:23,574] - INFO : common  : directory created at artifacts
+[2025-08-10 00:40:23,575] - INFO : common  : directory created at artifacts/models
+[2025-08-10 00:40:23,576] - ERROR : main  : name 'DataTransformation' is not defined
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 42, in <module>
+    model_training.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_04_Model_Training.py", line 18, in main
+    raise e
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_04_Model_Training.py", line 15, in main
+    model_training = DataTransformation(config=model_training_configmodel_training)
+                     ^^^^^^^^^^^^^^^^^^
+NameError: name 'DataTransformation' is not defined
+[2025-08-10 00:42:42,966] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-10 00:42:42,967] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-10 00:42:48,769] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-10 00:42:48,807] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:42:48,809] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:42:48,811] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:42:48,812] - INFO : common  : directory created at artifacts
+[2025-08-10 00:42:48,812] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-10 00:42:48,813] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-08-10 00:42:48,869] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-10 00:42:48,870] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-10 00:42:48,874] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:42:48,876] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:42:48,879] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:42:48,879] - INFO : common  : directory created at artifacts
+[2025-08-10 00:42:48,879] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-10 00:42:49,137] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-10 00:42:49,138] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-10 00:42:49,138] - INFO : main  : >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[2025-08-10 00:42:49,138] - INFO : main  : >>>>>> stage Model Training stage started <<<<<<
+[2025-08-10 00:42:49,142] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:42:49,144] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:42:49,146] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:42:49,147] - INFO : common  : directory created at artifacts
+[2025-08-10 00:42:49,148] - INFO : common  : directory created at artifacts/models
+[2025-08-10 00:42:49,148] - ERROR : main  : name 'pd' is not defined
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 42, in <module>
+    model_training.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_04_Model_Training.py", line 18, in main
+    raise e
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_04_Model_Training.py", line 16, in main
+    model_training.train()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\components\Model_Training.py", line 11, in train
+    train_data = pd.read_csv(self.config.train_data_path)
+                 ^^
+NameError: name 'pd' is not defined
+[2025-08-10 00:43:46,956] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-10 00:43:46,956] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-10 00:43:51,366] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-10 00:43:51,372] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:43:51,373] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:43:51,374] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:43:51,375] - INFO : common  : directory created at artifacts
+[2025-08-10 00:43:51,376] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-10 00:43:51,377] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-08-10 00:43:51,393] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-10 00:43:51,394] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-10 00:43:51,398] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:43:51,400] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:43:51,402] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:43:51,402] - INFO : common  : directory created at artifacts
+[2025-08-10 00:43:51,403] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-10 00:43:51,571] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-10 00:43:51,571] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-10 00:43:51,572] - INFO : main  : >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[2025-08-10 00:43:51,572] - INFO : main  : >>>>>> stage Model Training stage started <<<<<<
+[2025-08-10 00:43:51,577] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:43:51,578] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:43:51,580] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:43:51,581] - INFO : common  : directory created at artifacts
+[2025-08-10 00:43:51,582] - INFO : common  : directory created at artifacts/models
+[2025-08-10 00:43:51,668] - ERROR : main  : name 'logger' is not defined
+Traceback (most recent call last):
+  File "E:\Resume_Screening\resume_screening_ai\main.py", line 42, in <module>
+    model_training.main()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_04_Model_Training.py", line 18, in main
+    raise e
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\pipeline\Stage_04_Model_Training.py", line 16, in main
+    model_training.train()
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\components\Model_Training.py", line 25, in train
+    logger.info("Model training completed and saved successfully.")
+    ^^^^^^
+NameError: name 'logger' is not defined
+[2025-08-10 00:44:40,455] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-10 00:44:40,456] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-10 00:44:44,845] - INFO : main  : >>>>>> stage Data Ingestion stage started <<<<<<
+[2025-08-10 00:44:44,850] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:44:44,851] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:44:44,853] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:44:44,854] - INFO : common  : directory created at artifacts
+[2025-08-10 00:44:44,855] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-10 00:44:44,856] - INFO : Data_Ingestion  : File already exists of size: ~ 383 KB
+[2025-08-10 00:44:44,870] - INFO : main  : >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x
+[2025-08-10 00:44:44,874] - INFO : main  : >>>>>> stage Data Validation stage started <<<<<<
+[2025-08-10 00:44:44,876] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:44:44,877] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:44:44,879] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:44:44,880] - INFO : common  : directory created at artifacts
+[2025-08-10 00:44:44,880] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-10 00:44:45,093] - INFO : main  : >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x
+[2025-08-10 00:44:45,093] - INFO : main  : >>>>>> stage Data Transformation stage started <<<<<<
+[2025-08-10 00:44:45,094] - INFO : main  : >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x
+[2025-08-10 00:44:45,094] - INFO : main  : >>>>>> stage Model Training stage started <<<<<<
+[2025-08-10 00:44:45,098] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:44:45,100] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:44:45,102] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:44:45,103] - INFO : common  : directory created at artifacts
+[2025-08-10 00:44:45,104] - INFO : common  : directory created at artifacts/models
+[2025-08-10 00:44:45,114] - INFO : Model_Training  : Model training completed and saved successfully.
+[2025-08-10 00:44:45,114] - INFO : main  : >>>>>> stage Model Training stage completed <<<<<<
+
+x==========x
+[2025-08-10 00:46:47,928] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-10 00:46:47,928] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-10 00:46:53,564] - INFO : main  : >>>>>> stage Data Ingestion started <<<<<<
+[2025-08-10 00:46:53,583] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:46:53,584] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:46:53,586] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:46:53,588] - INFO : common  : directory created at artifacts
+[2025-08-10 00:46:53,592] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-10 00:46:54,486] - INFO : Data_Ingestion  : artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 391839
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "0d069081a21529e3e21c94ea952401e994d3e6a4bf7bfb50b781dce51af4bf13"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 133D:17581F:A9729:19A241:68979EA7
+Accept-Ranges: bytes
+Date: Sat, 09 Aug 2025 19:16:55 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100022-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1754767016.561970,VS0,VE271
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 894df65cae1276e09d283a677b712b4572f4d14c
+Expires: Sat, 09 Aug 2025 19:21:55 GMT
+Source-Age: 0
+
+
+[2025-08-10 00:46:54,558] - INFO : main  : >>>>>> stage Data Ingestion completed <<<<<<
+
+x==========x
+[2025-08-10 00:46:54,558] - INFO : main  : >>>>>> stage Data Validation started <<<<<<
+[2025-08-10 00:46:54,562] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:46:54,563] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:46:54,565] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:46:54,566] - INFO : common  : directory created at artifacts
+[2025-08-10 00:46:54,566] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-08-10 00:46:54,854] - INFO : main  : >>>>>> stage Data Validation completed <<<<<<
+
+x==========x
+[2025-08-10 00:46:54,855] - INFO : main  : >>>>>> stage Data Transformation started <<<<<<
+[2025-08-10 00:46:54,861] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:46:54,865] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:46:54,874] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:46:54,875] - INFO : common  : directory created at artifacts
+[2025-08-10 00:46:54,877] - INFO : common  : directory created at artifacts/data_transformation
+[2025-08-10 00:48:53,500] - INFO : Data_Transformation  : Splitted data into Training and Testing Sets
+[2025-08-10 00:48:53,500] - INFO : Data_Transformation  : Train data shape : (769, 7)
+[2025-08-10 00:48:53,501] - INFO : Data_Transformation  : Test data shape : (193, 7)
+[2025-08-10 00:48:53,501] - INFO : main  : >>>>>> stage Data Transformation completed <<<<<<
+
+x==========x
+[2025-08-10 00:48:53,502] - INFO : main  : >>>>>> stage Model Training started <<<<<<
+[2025-08-10 00:48:53,506] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-08-10 00:48:53,507] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-08-10 00:48:53,509] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-08-10 00:48:53,510] - INFO : common  : directory created at artifacts
+[2025-08-10 00:48:53,511] - INFO : common  : directory created at artifacts/models
+[2025-08-10 00:48:53,532] - INFO : Model_Training  : Model training completed and saved successfully.
+[2025-08-10 00:48:53,532] - INFO : main  : >>>>>> stage Model Training completed <<<<<<
+
+x==========x
+[2025-08-12 22:43:38,682] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-12 22:43:38,695] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-12 22:43:50,068] - INFO : _internal  : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.2:5001
+[2025-08-12 22:43:50,069] - INFO : _internal  : [33mPress CTRL+C to quit[0m
+[2025-08-12 22:50:23,063] - ERROR : app  : Exception on /process_resume [POST]
+Traceback (most recent call last):
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 34, in process_resume
+    if "role" not in request:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'Request' is not iterable
+[2025-08-12 22:50:23,104] - INFO : _internal  : 127.0.0.1 - - [12/Aug/2025 22:50:23] "[35m[1mPOST /process_resume HTTP/1.1[0m" 500 -
+[2025-08-12 22:53:30,492] - ERROR : app  : Exception on /process_resume [POST]
+Traceback (most recent call last):
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 34, in process_resume
+    return jsonify({"error": "No file uploaded"}), 400
+    ^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'Request' is not iterable
+[2025-08-12 22:53:30,508] - INFO : _internal  : 127.0.0.1 - - [12/Aug/2025 22:53:30] "[35m[1mPOST /process_resume HTTP/1.1[0m" 500 -
+[2025-08-12 22:54:39,119] - ERROR : app  : Exception on /process_resume [POST]
+Traceback (most recent call last):
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 34, in process_resume
+    return jsonify({"error": "No file uploaded"}), 400
+    ^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'Request' is not iterable
+[2025-08-12 22:54:39,135] - INFO : _internal  : 127.0.0.1 - - [12/Aug/2025 22:54:39] "[35m[1mPOST /process_resume HTTP/1.1[0m" 500 -
+[2025-08-12 22:56:48,929] - ERROR : app  : Exception on /process_resume [POST]
+Traceback (most recent call last):
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 34, in process_resume
+    if "role" not in request.form:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'Request' is not iterable
+[2025-08-12 22:56:48,947] - INFO : _internal  : 127.0.0.1 - - [12/Aug/2025 22:56:48] "[35m[1mPOST /process_resume HTTP/1.1[0m" 500 -
+[2025-08-12 23:01:29,740] - ERROR : app  : Exception on /process_resume [POST]
+Traceback (most recent call last):
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 34, in process_resume
+    return jsonify({"error": "No file uploaded"}), 400
+    ^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'Request' is not iterable
+[2025-08-12 23:01:29,782] - INFO : _internal  : 127.0.0.1 - - [12/Aug/2025 23:01:29] "[35m[1mPOST /process_resume HTTP/1.1[0m" 500 -
+[2025-08-12 23:03:12,220] - ERROR : app  : Exception on /process_resume [POST]
+Traceback (most recent call last):
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 34, in process_resume
+    return jsonify({"error": "No file uploaded"}), 400
+    ^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'Request' is not iterable
+[2025-08-12 23:03:12,238] - INFO : _internal  : 127.0.0.1 - - [12/Aug/2025 23:03:12] "[35m[1mPOST /process_resume HTTP/1.1[0m" 500 -
+[2025-08-12 23:05:57,630] - ERROR : app  : Exception on /process_resume [POST]
+Traceback (most recent call last):
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 34, in process_resume
+    if "file" not in request.files:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'Request' is not iterable
+[2025-08-12 23:05:57,645] - INFO : _internal  : 127.0.0.1 - - [12/Aug/2025 23:05:57] "[35m[1mPOST /process_resume HTTP/1.1[0m" 500 -
+[2025-08-12 23:07:00,052] - ERROR : app  : Exception on /process_resume [POST]
+Traceback (most recent call last):
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 34, in process_resume
+    file.save(file_path)
+       ^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'Request' is not iterable
+[2025-08-12 23:07:00,058] - INFO : _internal  : 127.0.0.1 - - [12/Aug/2025 23:07:00] "[35m[1mPOST /process_resume HTTP/1.1[0m" 500 -
+[2025-08-12 23:18:36,209] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-12 23:18:36,210] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-12 23:18:42,184] - INFO : _internal  : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.2:5001
+[2025-08-12 23:18:42,185] - INFO : _internal  : [33mPress CTRL+C to quit[0m
+[2025-08-12 23:18:50,363] - ERROR : app  : Exception on /process_resume [POST]
+Traceback (most recent call last):
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 43, in process_resume
+    resume_score = analyze_resume(extracted_text, role)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 14, in analyze_resume
+    cleaned_text = clean_text(text)
+                   ^^^^^^^^^^^^^^^^
+TypeError: clean_text() missing 1 required positional argument: 'text'
+[2025-08-12 23:18:50,416] - INFO : _internal  : 127.0.0.1 - - [12/Aug/2025 23:18:50] "[35m[1mPOST /process_resume HTTP/1.1[0m" 500 -
+[2025-08-12 23:20:33,201] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-12 23:20:33,201] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-12 23:20:39,139] - INFO : _internal  : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.2:5001
+[2025-08-12 23:20:39,143] - INFO : _internal  : [33mPress CTRL+C to quit[0m
+[2025-08-12 23:20:47,797] - ERROR : app  : Exception on /process_resume [POST]
+Traceback (most recent call last):
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 43, in process_resume
+    resume_score = analyze_resume(extracted_text, role)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 14, in analyze_resume
+    cleaned_text = clean_text(text)
+                   ^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\components\Similiarity_Score.py", line 14, in clean_text
+    text = re.sub(r'[^a-zA-Z ]', '', text)
+         ^^
+NameError: name 're' is not defined
+[2025-08-12 23:20:47,803] - INFO : _internal  : 127.0.0.1 - - [12/Aug/2025 23:20:47] "[35m[1mPOST /process_resume HTTP/1.1[0m" 500 -
+[2025-08-12 23:22:28,083] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-12 23:22:28,083] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-12 23:22:33,584] - INFO : _internal  : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.2:5001
+[2025-08-12 23:22:33,585] - INFO : _internal  : [33mPress CTRL+C to quit[0m
+[2025-08-12 23:22:44,666] - ERROR : app  : Exception on /process_resume [POST]
+Traceback (most recent call last):
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 43, in process_resume
+    resume_score = analyze_resume(extracted_text, role)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 14, in analyze_resume
+    cleaned_text = clean_text(text)
+                   ^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\components\Similiarity_Score.py", line 18, in clean_text
+    text = " ".join([word for word in text.split() if word not in self.stop_words])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\src\Resume_Screening\components\Similiarity_Score.py", line 18, in <listcomp>
+    text = " ".join([word for word in text.split() if word not in self.stop_words])
+                                                                  ^^^^
+NameError: name 'self' is not defined
+[2025-08-12 23:22:44,671] - INFO : _internal  : 127.0.0.1 - - [12/Aug/2025 23:22:44] "[35m[1mPOST /process_resume HTTP/1.1[0m" 500 -
+[2025-08-12 23:24:17,725] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-12 23:24:17,725] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-12 23:24:23,457] - INFO : _internal  : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.2:5001
+[2025-08-12 23:24:23,458] - INFO : _internal  : [33mPress CTRL+C to quit[0m
+[2025-08-12 23:24:37,111] - INFO : _internal  : 127.0.0.1 - - [12/Aug/2025 23:24:37] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-12 23:48:35,831] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-12 23:48:35,846] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-12 23:48:45,938] - INFO : _internal  : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.2:5001
+[2025-08-12 23:48:45,939] - INFO : _internal  : [33mPress CTRL+C to quit[0m
+[2025-08-13 00:17:23,125] - INFO : _internal  : 127.0.0.1 - - [13/Aug/2025 00:17:23] "[31m[1mPOST /process_resume HTTP/1.1[0m" 400 -
+[2025-08-13 00:20:39,555] - INFO : _internal  : 127.0.0.1 - - [13/Aug/2025 00:20:39] "[31m[1mPOST /process_resume HTTP/1.1[0m" 400 -
+[2025-08-13 00:28:45,296] - INFO : _internal  : 127.0.0.1 - - [13/Aug/2025 00:28:45] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-13 00:40:25,285] - INFO : _internal  : 127.0.0.1 - - [13/Aug/2025 00:40:25] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-13 00:40:51,643] - INFO : _internal  : 127.0.0.1 - - [13/Aug/2025 00:40:51] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-13 21:43:40,307] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-13 21:43:40,354] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-13 21:43:54,143] - INFO : _internal  : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.2:5001
+[2025-08-13 21:43:54,144] - INFO : _internal  : [33mPress CTRL+C to quit[0m
+[2025-08-13 21:53:46,897] - ERROR : app  : Exception on /process_resume [POST]
+Traceback (most recent call last):
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 48, in process_resume
+    if "file" not in request.files:
+                     ^^^^^^^^^^^^^
+AttributeError: module 'urllib.request' has no attribute 'files'
+[2025-08-13 21:53:46,982] - INFO : _internal  : 127.0.0.1 - - [13/Aug/2025 21:53:46] "[35m[1mPOST /process_resume HTTP/1.1[0m" 500 -
+[2025-08-13 21:57:12,704] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-13 21:57:12,704] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-13 21:57:18,995] - INFO : _internal  : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.2:5001
+[2025-08-13 21:57:18,995] - INFO : _internal  : [33mPress CTRL+C to quit[0m
+[2025-08-13 21:57:41,248] - INFO : _internal  : 127.0.0.1 - - [13/Aug/2025 21:57:41] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-13 22:01:05,764] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-13 22:01:05,764] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-13 22:01:11,864] - INFO : _internal  : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.2:5001
+[2025-08-13 22:01:11,864] - INFO : _internal  : [33mPress CTRL+C to quit[0m
+[2025-08-13 22:04:18,745] - ERROR : app  : Exception on /process_resume [POST]
+Traceback (most recent call last):
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Resume_Screening\resume_screening_ai\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 59, in process_resume
+    experience = extract_experience(cleaned_text)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Resume_Screening\resume_screening_ai\ResumeParser.py", line 22, in extract_experience
+    year_matches = re.findall(r'(\d+(?:\.\d+)?)\s*(?:\+)?\s*(?:years?|yrs?|yr)', text)
+                   ^^
+NameError: name 're' is not defined
+[2025-08-13 22:04:18,762] - INFO : _internal  : 127.0.0.1 - - [13/Aug/2025 22:04:18] "[35m[1mPOST /process_resume HTTP/1.1[0m" 500 -
+[2025-08-13 22:05:07,960] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-13 22:05:07,960] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-13 22:05:13,542] - INFO : _internal  : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.2:5001
+[2025-08-13 22:05:13,542] - INFO : _internal  : [33mPress CTRL+C to quit[0m
+[2025-08-13 22:06:00,592] - INFO : _internal  : 127.0.0.1 - - [13/Aug/2025 22:06:00] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-13 22:09:56,350] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-13 22:09:56,350] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-13 22:10:01,876] - INFO : _internal  : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.2:5001
+[2025-08-13 22:10:01,876] - INFO : _internal  : [33mPress CTRL+C to quit[0m
+[2025-08-13 22:10:07,459] - INFO : _internal  : 127.0.0.1 - - [13/Aug/2025 22:10:07] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-13 22:16:18,665] - INFO : _internal  : 127.0.0.1 - - [13/Aug/2025 22:16:18] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-13 22:21:14,124] - INFO : _internal  : 127.0.0.1 - - [13/Aug/2025 22:21:14] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-13 22:28:50,981] - INFO : _internal  : 127.0.0.1 - - [13/Aug/2025 22:28:50] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-14 01:18:17,925] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-08-14 01:18:17,951] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-08-14 01:18:25,975] - INFO : _internal  : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.2:5001
+[2025-08-14 01:18:25,976] - INFO : _internal  : [33mPress CTRL+C to quit[0m
+[2025-08-14 02:15:18,217] - INFO : _internal  : 127.0.0.1 - - [14/Aug/2025 02:15:18] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-14 02:15:18,225] - INFO : _internal  : 127.0.0.1 - - [14/Aug/2025 02:15:18] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-14 02:15:18,231] - INFO : _internal  : 127.0.0.1 - - [14/Aug/2025 02:15:18] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-14 02:15:18,239] - INFO : _internal  : 127.0.0.1 - - [14/Aug/2025 02:15:18] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-14 02:15:18,242] - INFO : _internal  : 127.0.0.1 - - [14/Aug/2025 02:15:18] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-14 02:15:18,245] - INFO : _internal  : 127.0.0.1 - - [14/Aug/2025 02:15:18] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-14 02:15:19,725] - INFO : _internal  : 127.0.0.1 - - [14/Aug/2025 02:15:19] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-14 02:15:19,798] - INFO : _internal  : 127.0.0.1 - - [14/Aug/2025 02:15:19] "POST /process_resume HTTP/1.1" 200 -
+[2025-08-14 02:15:19,810] - INFO : _internal  : 127.0.0.1 - - [14/Aug/2025 02:15:19] "POST /process_resume HTTP/1.1" 200 -

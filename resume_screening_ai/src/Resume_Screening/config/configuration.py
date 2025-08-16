@@ -1,5 +1,5 @@
 from src.Resume_Screening.constants import *
-from src.Resume_Screening.entity.config_entity import DataIngestionConfig, DataValidationConfig
+from src.Resume_Screening.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainingConfig
 from src.Resume_Screening.utils.common import read_yaml, create_directory
 import os
 class ConfigurationManager:
@@ -44,3 +44,26 @@ class ConfigurationManager:
         )
 
         return data_validation_config
+    
+    def get_transformation_config(self) -> DataTransformationConfig:
+        config = self.config.data_transformation
+        create_directory([config.root_dir])
+        data_transformation_config = DataTransformationConfig(
+            root_dir = config.root_dir,
+            data_path = config.data_path,
+            transformed_data_path = config.transformed_data_path
+        )
+        
+        return data_transformation_config
+    
+    def get_model_training_config(self) -> ModelTrainingConfig:
+        config = self.config.models
+        create_directory([config.root_dir])
+        model_training_config = ModelTrainingConfig(
+            root_dir = config.root_dir,
+            model_dir= config.model_dir,
+            train_data_path = config.train_data_path,
+            test_data_path = config.test_data_path
+        )
+        
+        return model_training_config
