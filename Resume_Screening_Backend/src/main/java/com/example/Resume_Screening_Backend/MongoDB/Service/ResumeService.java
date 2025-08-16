@@ -42,26 +42,18 @@ public class ResumeService {
         return resumeRepository.findById(resumeId);
     }
 
-
     public ResponseEntity<String> analyzeResume(ByteArrayResource resource, String jobDescription) throws IOException {
         RestTemplate restTemplate = new RestTemplate();
-
-        // Wrap MultipartFile into a ByteArrayResource so RestTemplate can send it as multipart
-
-
-        // Prepare request body with matching keys from Python API
+        
         MultiValueMap<String, Object> body = new LinkedMultiValueMap<>();
-        body.add("file", resource); // matches request.files["file"]
-        body.add("role", jobDescription); // matches request.form["role"]
+        body.add("file", resource); 
+        body.add("role", jobDescription); 
 
-        // Prepare headers
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.MULTIPART_FORM_DATA);
 
-        // Create HTTP entity
         HttpEntity<MultiValueMap<String, Object>> requestEntity = new HttpEntity<>(body, headers);
 
-        // Send POST request
         ResponseEntity<String> response = restTemplate.postForEntity(pythonApiUrl, requestEntity, String.class);
 
         return  response;
