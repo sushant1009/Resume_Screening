@@ -112,6 +112,11 @@ public class ResumeController {
 
     @GetMapping("/user/{userName}")
     public ResponseEntity<List<ResumeDocument>> getResumesByUserId(@PathVariable String userName) {
-        return ResponseEntity.ok(resumeService.getResumesByUserId(userName));
+        return ResponseEntity.ok(resumeService.getResumesByUserName(userName));
+    }
+    @GetMapping("/all")
+    public ResponseEntity<List<ResumeDocument>> getAllResumes()
+    {
+        return ResponseEntity.ok(resumeService.getAllResumes());
     }
 }

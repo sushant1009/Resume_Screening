@@ -1649,3 +1649,8 @@ NameError: name 're' is not defined
 [2025-08-14 02:15:19,725] - INFO : _internal  : 127.0.0.1 - - [14/Aug/2025 02:15:19] "POST /process_resume HTTP/1.1" 200 -
 [2025-08-14 02:15:19,798] - INFO : _internal  : 127.0.0.1 - - [14/Aug/2025 02:15:19] "POST /process_resume HTTP/1.1" 200 -
 [2025-08-14 02:15:19,810] - INFO : _internal  : 127.0.0.1 - - [14/Aug/2025 02:15:19] "POST /process_resume HTTP/1.1" 200 -
+[2025-10-09 17:38:51,055] - INFO : common  : yaml file : config\config.yaml loaded successfully
+[2025-10-09 17:38:51,092] - INFO : common  : yaml file : params.yaml loaded successfully
+[2025-10-09 17:38:51,162] - INFO : common  : yaml file : schema.yaml loaded successfully
+[2025-10-09 17:38:51,167] - INFO : common  : directory created at artifacts
+[2025-10-09 17:38:51,170] - INFO : common  : directory created at artifacts/data_ingestion

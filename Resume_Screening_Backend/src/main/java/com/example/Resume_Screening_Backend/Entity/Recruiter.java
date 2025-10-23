@@ -23,11 +23,15 @@ public class Recruiter {
 
     @Column(nullable = false)
     private String fName ;
+
     @Column(nullable = false)
     private String lName;
 
     @Column(nullable = false)
     private String password;
+
+    @Column(nullable = false)
+    private String companyName;
 
     private LocalDateTime createdAt = LocalDateTime.now();
 }
