@@ -7,7 +7,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @Entity
 @Data
@@ -29,7 +28,7 @@ public class Applications {
 
     private LocalDateTime appliedAt = LocalDateTime.now();
 
-    private Date lastDate;
-
     private String status = "PENDING";
+
+
 }

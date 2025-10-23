@@ -4,30 +4,25 @@ import com.example.Resume_Screening_Backend.Entity.Applications;
 import com.example.Resume_Screening_Backend.Entity.Job;
 import com.example.Resume_Screening_Backend.Entity.User;
 import com.example.Resume_Screening_Backend.Repository.ApplicationsRepository;
-import com.example.Resume_Screening_Backend.Repository.JobRepository;
-import com.example.Resume_Screening_Backend.Repository.UserRepository;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+
 @Service
-@NoArgsConstructor(force = true)
+//@NoArgsConstructor(force = true)
+@AllArgsConstructor
 public class ApplicationsService {
 
     private final ApplicationsRepository applicationRepository;
-    private final UserRepository userRepository;
-    private final JobRepository jobRepository;
+    private final UserService userService;
+    private final JobService jobService;
 
-    public Applications applyForJob(String username, String jobId) {
-        User user = userRepository.findById(username)
+    public Applications applyForJob(Applications application) {
+        User user = userService.getByUsername(application.getUser().getUsername())
                 .orElseThrow(() -> new RuntimeException("User not found"));
-
-        Job job = jobRepository.findById(jobId)
+        Job job =jobService.getJobById(application.getJob().getJobId())
                 .orElseThrow(() -> new RuntimeException("Job not found"));
-
-        Applications application = new Applications();
-        application.setUser(user);
-        application.setJob(job);
 
         return applicationRepository.save(application);
     }

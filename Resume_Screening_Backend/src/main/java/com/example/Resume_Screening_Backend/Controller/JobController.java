@@ -4,27 +4,35 @@ import com.example.Resume_Screening_Backend.Entity.Job;
 import com.example.Resume_Screening_Backend.Entity.User;
 import com.example.Resume_Screening_Backend.Service.JobService;
 import com.example.Resume_Screening_Backend.Service.UserService;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/jobs")
+@AllArgsConstructor
 public class JobController {
 
-    private JobService jobService;
-    private UserService userService;
+    private final JobService jobService;
+    private final UserService userService;
 
     @GetMapping("/{jobId}")
-    public ResponseEntity<?> getJobById(@PathVariable String jobId)
+    public ResponseEntity<?> getJobById(@PathVariable Long jobId)
     {
         return jobService.getJobById(jobId)
                 .map(job -> ResponseEntity.ok(job))
                 .orElse(ResponseEntity.noContent().build());
     }
-    @PostMapping("/{role}")
+    @PostMapping("/create")
     public ResponseEntity<?> saveJob(@RequestBody Job job)
     {
          return ResponseEntity.ok(jobService.saveJob(job));
+    }
+
+    @GetMapping("/")
+    public ResponseEntity<?> getAllJobs(){
+        return ResponseEntity.ok(jobService.getAllJobs());
     }
 }

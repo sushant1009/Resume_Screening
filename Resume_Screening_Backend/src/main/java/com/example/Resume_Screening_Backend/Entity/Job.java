@@ -14,8 +14,9 @@ import java.util.List;
 public class Job {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true)
-    private String jobId;
+    private Long jobId;
 
     private String role;
     private String jobDescription;
