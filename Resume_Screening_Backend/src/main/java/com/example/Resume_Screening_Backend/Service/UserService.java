@@ -2,14 +2,17 @@ package com.example.Resume_Screening_Backend.Service;
 
 import com.example.Resume_Screening_Backend.Entity.User;
 import com.example.Resume_Screening_Backend.Repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-@Component
+@Service
 public class UserService {
 
-    private UserRepository userRepository;
+    @Autowired
+    private UserRepository userRepository ;
 
     public Optional<User> getByUsername(String username)
     {
@@ -19,4 +22,5 @@ public class UserService {
     public User save(User user) {
         return userRepository.save(user);
     }
+
 }

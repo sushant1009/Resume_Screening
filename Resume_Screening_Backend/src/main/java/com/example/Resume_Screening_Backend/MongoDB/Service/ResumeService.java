@@ -15,7 +15,9 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Service
@@ -35,9 +37,6 @@ public class ResumeService {
         return resumeRepository.save(resume);
     }
 
-    public List<ResumeDocument> getResumesByUserId(String userName) {
-        return resumeRepository.findByUserName(userName);
-    }
     public Optional<ResumeDocument> getResumeById(String resumeId){
         return resumeRepository.findById(resumeId);
     }
@@ -69,5 +68,17 @@ public class ResumeService {
     }
 
 
+    public List<ResumeDocument> getAllResumes() {
+        List<ResumeDocument> resumes = resumeRepository.findAll();
+        List<Map<String, Object>> response = new ArrayList<>();
+        return resumeRepository.findAll();
+    }
+    public List<ResumeDocument> getResumesByUserName(String username)
+    {
 
+        List<ResumeDocument> resumes = resumeRepository.findByUserName(username);
+        System.out.println("Username"+resumes.size());
+            resumes.forEach(System.out::println);
+        return resumes;
+    }
 }

@@ -64,3 +64,9 @@ html, body, #root {
 .signup-form button:hover {
   background-color: #0d47a1;
 }
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin: -5px 0 5px 5px;
+} 

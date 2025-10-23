@@ -1,34 +1,46 @@
-import React from 'react';
+// src/components/ResumeCard.jsx
+import React from "react";
 
-
-function ResumeCard({ resume }) {
-  const score = scoreResume(resume);
-
-  // Function to pick border color
-  const getBorderColor = (score) => {
-    const numericScore = parseInt(score);
-    if (numericScore >= 80) return 'green';      
-    if (numericScore >= 50) return 'orange';      
-    return 'red';                              
-  };
-
-  const cardStyle = {
-    border: `2px solid ${getBorderColor(score)}`,
-    marginBottom: '10px',
-    padding: '10px',
-    borderRadius: '8px',
-    backgroundcolor :'#faf7e40a'
-  };
-
+const ResumeCard = ({ resume }) => {
   return (
-    <div style={cardStyle}>
-      <h3>{resume.name}</h3>
-      <p><b>Experience:</b> {resume.experience} years</p>
-      <p><b>Skills:</b> {resume.skills.join(', ')}</p>
-      <p><b>Score:</b> {score}/100</p>
-      <button>Shortlist</button>
+    <div
+      style={{
+        border: "1px solid #ddd",
+        borderRadius: "10px",
+        padding: "15px",
+        boxShadow: "0px 4px 8px rgba(0,0,0,0.1)",
+        backgroundColor: "#fff"
+      }}
+    >
+      <h3>{resume.username}</h3>
+      <p><strong>File:</strong> {resume.fileName}</p>
+      <p><strong>Score:</strong> {resume.score}</p>
+      <p><strong>Role:</strong> {resume.role}</p>
+
+      {/* Resume preview */}
+      {resume.previewUrl ? (
+        <iframe
+          src={resume.previewUrl}
+          title="Resume Preview"
+          width="100%"
+          height="200px"
+          style={{ border: "none" }}
+        />
+      ) : (
+        <pre
+          style={{
+            backgroundColor: "#f7f7f7",
+            padding: "10px",
+            borderRadius: "5px",
+            maxHeight: "200px",
+            overflowY: "auto"
+          }}
+        >
+          {resume.filePath || "No preview available"}
+        </pre>
+      )}
     </div>
   );
-}
+};
 
 export default ResumeCard;
