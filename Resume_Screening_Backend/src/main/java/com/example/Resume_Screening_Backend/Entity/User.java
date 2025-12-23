@@ -1,5 +1,7 @@
 package com.example.Resume_Screening_Backend.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,7 +14,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class User implements AppUser {
 
     @Id
     @Column(nullable = false,unique = true)
@@ -27,10 +29,18 @@ public class User {
     private String lName;
 
     @Column(nullable = false)
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
     private LocalDateTime createdAt = LocalDateTime.now();
 
     @OneToMany(mappedBy = "user")
+    @JsonIgnore
     private List<Applications> applications;
+
+
+    @Override
+    public String getRole() {
+        return "USER";
+    }
 }

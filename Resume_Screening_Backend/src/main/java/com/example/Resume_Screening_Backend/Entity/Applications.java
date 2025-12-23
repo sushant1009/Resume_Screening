@@ -26,9 +26,13 @@ public class Applications {
     @JoinColumn(name = "jobId", nullable = false)
     private Job job;
 
+    @Column(nullable = false)
+    private String resumeId;
+
+    @Column(nullable = false)
     private LocalDateTime appliedAt = LocalDateTime.now();
 
-    private String status = "PENDING";
-
+    @Enumerated(EnumType.STRING)
+    private ApplicationStatus status;
 
 }

@@ -35,6 +35,7 @@ public class JobService{
         return jobRepository.findByRole(role);
     }
     public ResponseEntity<?> saveJob(Job job){
+        System.out.println(String.valueOf(job.getRecruiter().getUsername()));
         String recruiterId = String.valueOf(job.getRecruiter().getUsername());
         if(recruiterService.isRecruiterExists(recruiterId))
             return ResponseEntity.ok(jobRepository.save(job));

@@ -1654,3 +1654,12 @@ NameError: name 're' is not defined
 [2025-10-09 17:38:51,162] - INFO : common  : yaml file : schema.yaml loaded successfully
 [2025-10-09 17:38:51,167] - INFO : common  : directory created at artifacts
 [2025-10-09 17:38:51,170] - INFO : common  : directory created at artifacts/data_ingestion
+[2025-12-19 12:42:08,649] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-12-19 12:42:08,660] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-12-19 12:42:15,050] - WARNING : file_download  : Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+[2025-12-19 12:42:30,971] - INFO : _internal  : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.2:5001
+[2025-12-19 12:42:30,972] - INFO : _internal  : [33mPress CTRL+C to quit[0m
+[2025-12-19 12:45:33,796] - INFO : _internal  : 127.0.0.1 - - [19/Dec/2025 12:45:33] "POST /process_resume HTTP/1.1" 200 -

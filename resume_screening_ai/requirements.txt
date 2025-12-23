@@ -10,3 +10,6 @@ joblib
 types-PyYAML
 Flask
 Flask-Cors
+pdfminer.six
+sentence_transformers
+nltk

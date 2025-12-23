@@ -1,44 +1,120 @@
-// src/components/ResumeCard.jsx
+import { useState } from "react";
 import React from "react";
+import "../css/ResumeCard.css";
+import api from '../config/axiosConfig'
 
 const ResumeCard = ({ resume }) => {
-  return (
-    <div
-      style={{
-        border: "1px solid #ddd",
-        borderRadius: "10px",
-        padding: "15px",
-        boxShadow: "0px 4px 8px rgba(0,0,0,0.1)",
-        backgroundColor: "#fff"
-      }}
-    >
-      <h3>{resume.username}</h3>
-      <p><strong>File:</strong> {resume.fileName}</p>
-      <p><strong>Score:</strong> {resume.score}</p>
-      <p><strong>Role:</strong> {resume.role}</p>
 
-      {/* Resume preview */}
-      {resume.previewUrl ? (
-        <iframe
-          src={resume.previewUrl}
-          title="Resume Preview"
-          width="100%"
-          height="200px"
-          style={{ border: "none" }}
-        />
-      ) : (
-        <pre
-          style={{
-            backgroundColor: "#f7f7f7",
-            padding: "10px",
-            borderRadius: "5px",
-            maxHeight: "200px",
-            overflowY: "auto"
-          }}
-        >
-          {resume.filePath || "No preview available"}
-        </pre>
-      )}
+  const [resumes, setResumes] = useState([]);
+
+  const [previewUrl, setPreviewUrl] = useState(null);
+
+const previewResume = async (resumeId) => {
+  try {
+    const res = await api.get(`/api/resume/preview/${resumeId}`, {
+      responseType: "blob"
+    });
+    console.log(res)
+
+    const pdfBlob = new Blob([res.data], { type: "application/pdf" });
+    const url = URL.createObjectURL(pdfBlob);
+
+    setPreviewUrl(url);
+  } catch (err) {
+    alert("Failed to load resume preview"+err);
+  }
+};
+
+// const deleteResume = async (resumeId) => {
+//   if (!window.confirm("Are you sure you want to delete this resume?")) return;
+
+//   try {
+//     await api.delete(`/api/resume/${resumeId}`);
+
+//     // Remove from UI instantly
+//     setResumes(prev => prev.filter(r => r.id !== resumeId));
+
+//     alert("🗑 Resume deleted successfully");
+//   } catch (err) {
+//     alert("❌ Failed to delete resume"+err);
+//     console.error(err);
+//   }
+// };
+const handleDelete = async (resumeId) => {
+  if (!window.confirm("Are you sure you want to delete this resume?")) return;
+
+  try {
+    await api.delete(`/api/resume/${resumeId}`);
+
+    // ✅ Instantly refresh UI
+    setResumes(prev =>
+      prev.filter(resume => resume.id !== resumeId)
+    );
+
+    alert("Resume deleted successfully");
+  } catch (err) {
+    alert("Failed to delete resume");
+    console.error(err);
+  }
+};
+
+
+
+  return (
+    <div className="resume-card">
+      {/* Header */}
+      <div className="resume-header">
+        <span className="id"><strong>Id:</strong> {resume.id}</span>
+     
+        <span className="score-badge"><strong>Score: </strong>{resume.score}</span>
+      </div>
+
+      {/* File Info */}
+      <p className="file-name">
+        <strong>File Name:</strong> {resume.originalFileName}
+      </p>
+
+      {/* Skills */}
+      <div className="skills-section">
+        
+        {Array.isArray(resume.skills) &&
+          resume.skills.map((skill, i) => (
+            <span key={i} className="skill-chip">
+              <strong>Skills: </strong>
+              {skill.replace(/["[\]]/g, " ").toUpperCase()}
+            </span>
+          ))}
+      </div>
+
+     
+      <div className="meta">
+        <span><strong>Role:</strong> {resume.role}</span>
+        <span><strong>Experience:</strong>{resume.experience ? Math.floor(resume.experience / 12) : 0} yrs</span>
+      </div>
+
+      <button   className="preview-btn"
+ onClick={() => previewResume(resume.id)}>
+  Preview Resume
+</button>
+
+{previewUrl && (
+  <iframe
+    src={previewUrl}
+    width="100%"
+    height="400px"
+    style={{ borderRadius: "10px", marginTop: "10px" }}
+  />
+)}
+
+  <button
+  className="delete-btn"
+  onClick={() => handleDelete(resume.id)}
+>
+  Delete
+</button>
+
+
+
     </div>
   );
 };

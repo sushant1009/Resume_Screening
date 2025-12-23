@@ -9,12 +9,17 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
+import java.nio.file.AccessDeniedException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -73,4 +78,41 @@ public class ResumeService {
             resumes.forEach(System.out::println);
         return resumes;
     }
+
+    public byte[] getResumeBytes(String id) throws IOException {
+        ResumeDocument resume = resumeRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Resume not found"));
+
+        Path path = Paths.get(resume.getFilePath());
+        return Files.readAllBytes(path);
+    }
+
+    public void deleteResume(String resumeId, String username) throws AccessDeniedException {
+
+        ResumeDocument resume = resumeRepository.findById(resumeId)
+                .orElseThrow(() -> new RuntimeException("Resume not found"));
+
+        // 🔐 Allow only owner or recruiter
+        if (!resume.getUserName().equals(username) &&
+                !SecurityContextHolder.getContext()
+                        .getAuthentication()
+                        .getAuthorities()
+                        .stream()
+                        .anyMatch(a -> a.getAuthority().equals("ROLE_RECRUITER"))) {
+
+            throw new AccessDeniedException("Not allowed to delete this resume");
+        }
+
+        // 🗑 Delete file from storage
+        Path path = Paths.get(resume.getFilePath());
+        try {
+            Files.deleteIfExists(path);
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to delete resume file");
+        }
+
+        // 🗑 Delete DB record
+        resumeRepository.delete(resume);
+    }
+
 }

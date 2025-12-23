@@ -10,7 +10,7 @@ public class ResumeScreeningBackendApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ResumeScreeningBackendApplication.class, args);
-		System.out.println("Sucess");
+		System.out.println("Sucessfully Running");	
 	}
 
 }
