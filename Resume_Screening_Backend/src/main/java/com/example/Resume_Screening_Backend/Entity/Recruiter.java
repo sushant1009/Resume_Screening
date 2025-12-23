@@ -1,5 +1,7 @@
 package com.example.Resume_Screening_Backend.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -13,12 +15,13 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Recruiter {
+public class Recruiter implements  AppUser {
     @Id
     @Column(nullable = false,unique = true)
     private String username;
 
-    @Column(unique = true)
+
+    @Column(nullable = false,unique = true)
     private String email;
 
     @Column(nullable = false)
@@ -28,10 +31,16 @@ public class Recruiter {
     private String lName;
 
     @Column(nullable = false)
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
     @Column(nullable = false)
     private String companyName;
 
     private LocalDateTime createdAt = LocalDateTime.now();
+
+    @Override
+    public String getRole() {
+        return "RECRUITER";
+    }
 }

@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -18,15 +20,32 @@ public class Job {
     @Column(unique = true)
     private Long jobId;
 
+    @Column(nullable = false)
     private String role;
+
+    @Column(nullable = false)
     private String jobDescription;
+
+    @Column(nullable = false)
     private Integer noOpenings;
-    private String companyName;
+
+    @Column(nullable = false)
+    private String minQualification;
+
+    @Column(nullable = false)
+    private Integer minExperience;
+
+    @Column(nullable = false)
+    private List<String> skills;
+
+    @Column(nullable = false)
+    private String location;
+
+    @Column(nullable = false)
+    private Date deadline;
 
     @ManyToOne
     @JoinColumn(name = "username", nullable = false)
     private Recruiter recruiter;
 
-    @OneToMany(mappedBy = "job")
-    private List<Applications> applications;
 }

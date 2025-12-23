@@ -8,13 +8,20 @@ import com.example.Resume_Screening_Backend.Repository.UserRepository;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.core.io.ByteArrayResource;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.AccessDeniedException;
 import java.nio.file.Files;
 import java.util.*;
 
@@ -28,20 +35,18 @@ public class ResumeController {
     private final UserRepository userRepository;
 
     @PostMapping("/upload")
+    @PreAuthorize("hasRole('USER')")
     public ResponseEntity<?> uploadResume(@RequestParam("resume") MultipartFile file,
-                                          @RequestParam("userId") String username,
-                                          @RequestParam("role") String role) {
+                                          @RequestParam("role") String role, Authentication authentication) {
         try {
          
             if (file == null || file.isEmpty()) {
                 return ResponseEntity.badRequest().body("Resume file is missing or empty.");
             }
-            if (username == null || username.trim().isEmpty()) {
-                return ResponseEntity.badRequest().body("Username is required.");
-            }
             if (role == null || role.trim().isEmpty()) {
                 return ResponseEntity.badRequest().body("Job Description / Role is required.");
             }
+            String username = authentication.getName();
             User user = userRepository.findByUsername(username).orElse(null);
             if(user == null)
                 return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
@@ -75,6 +80,7 @@ public class ResumeController {
                 experience = rootNode.get("experience").asInt();
 
             } catch (Exception e) {
+                System.out.println("Python api unavailable");
                 throw new RuntimeException("Failed to parse score from Python API response: " + response.getBody(), e);
             }
             doc.setScore(score);
@@ -92,10 +98,7 @@ public class ResumeController {
         }
     }
 
-
-
-
-
+    @PreAuthorize("hasRole('USER') or hasRole('RECRUITER')")
     @GetMapping("/{id}")
     public ResponseEntity<?> getResume(@PathVariable String id) {
         Optional<ResumeDocument> doc = resumeService.getResumeById(id);
@@ -106,13 +109,44 @@ public class ResumeController {
     }
 
 
-    @GetMapping("/user/{userName}")
-    public ResponseEntity<List<ResumeDocument>> getResumesByUserId(@PathVariable String userName) {
-        return ResponseEntity.ok(resumeService.getResumesByUserName(userName));
+    @GetMapping("/me")
+    @PreAuthorize("hasRole('USER')")
+    public ResponseEntity<List<ResumeDocument>> getMyResumes(
+            Authentication authentication) {
+
+        String username = authentication.getName(); // extracted from JWT
+        return ResponseEntity.ok(
+                resumeService.getResumesByUserName(username)
+        );
     }
+
     @GetMapping("/all")
     public ResponseEntity<List<ResumeDocument>> getAllResumes()
     {
         return ResponseEntity.ok(resumeService.getAllResumes());
     }
+
+    @GetMapping("/preview/{id}")
+    @PreAuthorize("hasRole('RECRUITER') or hasRole('USER')")
+    public ResponseEntity<byte[]> previewResume(@PathVariable String id) throws IOException {
+
+        byte[] pdfBytes = resumeService.getResumeBytes(id);
+
+        return ResponseEntity.ok()
+                .contentType(MediaType.APPLICATION_PDF)
+                .header(HttpHeaders.CONTENT_DISPOSITION, "inline; filename=resume.pdf")
+                .body(pdfBytes);
+    }
+
+    @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('USER')")
+    public ResponseEntity<Void> deleteResume(
+            @PathVariable String id,
+            Authentication authentication) throws AccessDeniedException {
+
+        resumeService.deleteResume(id, authentication.getName());
+        return ResponseEntity.noContent().build(); // 204
+    }
+
+
 }
