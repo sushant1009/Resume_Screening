@@ -1,0 +1,60 @@
+/* Page Container */
+.resume-container {
+  min-height: 100vh;
+  padding: 30px 40px;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+/* Page Heading */
+.resume-container h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #38bdf8;
+}
+
+/* Grid Layout */
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+/* Loading / No Data */
+.no-data {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 16px;
+  color: #94a3b8;
+}
+
+/* Smooth card entrance animation */
+.resume-grid > div {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 20px;
+  }
+
+  .resume-container h1 {
+    font-size: 26px;
+  }
+}

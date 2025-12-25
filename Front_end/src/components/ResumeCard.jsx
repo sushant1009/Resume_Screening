@@ -81,7 +81,7 @@ const handleDelete = async (resumeId) => {
           resume.skills.map((skill, i) => (
             <span key={i} className="skill-chip">
               <strong>Skills: </strong>
-              {skill.replace(/["[\]]/g, " ").toUpperCase()}
+              {skill.replace(/["[\]]/g, " ")}
             </span>
           ))}
       </div>

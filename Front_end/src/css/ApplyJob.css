@@ -1,0 +1,14 @@
+.apply-container select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 16px;
+  border-radius: 8px;
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+}
+
+.apply-container option {
+  background: #020617;
+  color: #e5e7eb;
+}
