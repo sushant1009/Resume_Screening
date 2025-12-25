@@ -1,0 +1,97 @@
+/* ----------- Container ----------- */
+.job-list-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.job-list-container h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* ----------- Filter Input ----------- */
+.filter-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  transition: 0.2s ease;
+}
+
+.filter-input:focus {
+  border-color: #0077cc;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 119, 204, 0.4);
+}
+
+/* ----------- Job Cards Grid ----------- */
+.job-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 20px;
+  padding: 10px 0;
+}
+
+/* ----------- Job Card ----------- */
+.job-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid #eaeaea;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* ----------- Title & Company ----------- */
+.job-card h3 {
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.job-card h2 {
+  font-size: 18px;
+  color: #0077cc;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/* ----------- Job Details ----------- */
+.job-card p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #555;
+}
+
+.job-card strong {
+  color: #222;
+}
+
+/* ----------- Apply Button ----------- */
+.job-card button {
+  margin-top: 15px;
+  width: 100%;
+  background-color: #0077cc;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.job-card button:hover {
+  background-color: #005fa3;
+}

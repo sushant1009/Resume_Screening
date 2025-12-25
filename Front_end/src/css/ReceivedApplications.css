@@ -1,0 +1,218 @@
+/* Container */
+.app-container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #0f172a; /* dark background */
+  min-height: 100vh;
+  color: #e5e7eb;
+}
+
+/* Heading */
+.app-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #38bdf8;
+}
+
+/* Filter Section */
+.filter-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-group input {
+  padding: 10px 14px;
+  width: 220px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background-color: #020617;
+  color: #e5e7eb;
+  outline: none;
+}
+
+.filter-group input::placeholder {
+  color: #94a3b8;
+}
+
+.filter-group button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.filter-group button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Applications Grid */
+.app-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Application Card */
+.app-card {
+  background-color: #020617;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Content */
+.app-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #facc15;
+}
+
+.app-card p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #cbd5f5;
+}
+
+/* Status Badge */
+.status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.status.APPLIED {
+  background-color: #334155;
+  color: #e5e7eb;
+}
+
+.status.SHORTLISTED {
+  background-color: #16a34a;
+  color: #dcfce7;
+}
+
+/* Shortlist Button */
+.app-card button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #22c55e;
+  color: #052e16;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.app-card button:hover {
+  background-color: #16a34a;
+  transform: scale(1.03);
+}
+
+/* Disabled Button */
+.app-card button:disabled {
+  background-color: #475569;
+  color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .filter-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-group input {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .filter-group button {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+/* Status dropdown container */
+.status-wrapper {
+  margin-top: 10px;
+}
+
+/* Label */
+.status-wrapper label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #94a3b8;
+}
+
+/* Select dropdown */
+.status-select {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  background-color: #020617;
+  color: #e5e7eb;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover */
+.status-select:hover {
+  border-color: #38bdf8;
+}
+
+/* Focus */
+.status-select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+}
+
+/* Dropdown options */
+.status-select option {
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
+/* Status-based colors (text hint) */
+.status-select option[value="PENDING"] {
+  color: #facc15; /* Yellow */
+}
+
+.status-select option[value="SHORTLISTED"] {
+  color: #22c55e; /* Green */
+}
+
+.status-select option[value="REJECTED"] {
+  color: #ef4444; /* Red */
+}
+
+/* Disabled dropdown */
+.status-select:disabled {
+  background-color: #020617;
+  border-color: #475569;
+  color: #64748b;
+  cursor: not-allowed;
+}

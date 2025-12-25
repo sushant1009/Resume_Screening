@@ -1,0 +1,56 @@
+/* ResumeUpload.css */
+.resume-upload-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  background-color: #f7f9fc;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resume-upload-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.resume-upload-container input[type="text"],
+.resume-upload-container input[type="file"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.resume-upload-container input[type="text"]:focus,
+.resume-upload-container input[type="file"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.resume-upload-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-upload-container button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .resume-upload-container {
+    padding: 20px;
+    margin: 30px 10px;
+  }
+}
