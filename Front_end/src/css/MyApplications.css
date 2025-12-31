@@ -1,0 +1,19 @@
+
+.app-container{
+    margin-top: 10px;
+ align-items: center;
+ background-color: rgba(255, 251, 247, 0.582);
+ color: black;
+}
+.app-card {
+  background-color: rgba(247, 239, 239, 0.966);
+  border-radius: 15px;
+  border: groove rgb(160, 150, 150);
+  margin: 10px;
+  display: grid;
+  color: rgb(8, 8, 8);
+}
+
+.app-card * {
+  color: rgb(10, 10, 10);
+}
