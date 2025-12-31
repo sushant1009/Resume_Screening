@@ -22,5 +22,16 @@ public class UserService {
     public User save(User user) {
         return userRepository.save(user);
     }
+    public boolean isUserExists(String username)
+    {
+        return userRepository.existsById(username);
+    }
+    public boolean existEmail(String email)
+    {
+        return userRepository.existsByEmail(email);
+    }
 
+    public Optional<User> findByEmail(String email) {
+        return userRepository.findByEmail(email);
+    }
 }

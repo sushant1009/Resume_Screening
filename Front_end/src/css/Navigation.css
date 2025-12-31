@@ -1,6 +1,6 @@
 /* Base Navbar */
 .navbar {
-  background-color: #0f172a;
+  background-color: #6683c7;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -13,10 +13,28 @@
 
 /* Logo */
 .nav-logo {
-  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 22px;
   font-weight: 700;
-  color: #38bdf8;
+  color: #b9c1cc; /* dark professional color */
+  cursor: pointer;
 }
+
+.nav-logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.nav-logo span {
+  letter-spacing: 0.5px;
+}
+
+
 
 /* Links */
 .nav-links {

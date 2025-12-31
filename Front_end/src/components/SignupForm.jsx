@@ -75,7 +75,7 @@ const SignupForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!validateForm()) return;
+    if (!validateForm()) return false;
 
     try {
       let endpoint =
@@ -86,6 +86,7 @@ const SignupForm = () => {
       const res = await api.post(endpoint, form);
       if(res.status === 200)
       {
+        console.log(res.status)
         setSuccess("🎉 Signup successful! Redirecting to login...");
       setForm({
         fname: "",

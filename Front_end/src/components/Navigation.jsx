@@ -15,8 +15,8 @@ const Navigation = () => {
   return (
     <nav className="navbar">
       {/* Logo */}
-      <div className="nav-logo">ResumePortal</div>
-
+      <div className="nav-logo"><img src="src\assets\logo.png" alt="logo.png" />SearchOff</div>
+        
       {/* Hamburger (Mobile) */}
       <div className="hamburger" onClick={() => setOpen(!open)}>
         ☰
@@ -28,6 +28,7 @@ const Navigation = () => {
           <>
             <Link to="/login" onClick={() => setOpen(false)}>Login</Link>
             <Link to="/signup" onClick={() => setOpen(false)}>Signup</Link>
+             <Link to="/forgetpass" onClick={() => setOpen(false)}></Link>
           </>
         )}
 
@@ -36,6 +37,7 @@ const Navigation = () => {
             <Link to="/resumeupload" onClick={() => setOpen(false)}>Upload Resume</Link>
             <Link to="/getresume" onClick={() => setOpen(false)}>My Resume</Link>
             <Link to="/joblist" onClick={() => setOpen(false)}>Jobs</Link>
+             <Link to="/myapplications" onClick={() => setOpen(false)}>Track Applications</Link>
             <button className="logout-btn" onClick={logout}>
               ⏻ Logout
             </button>

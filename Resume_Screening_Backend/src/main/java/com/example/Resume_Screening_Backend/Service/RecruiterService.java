@@ -29,4 +29,12 @@ public class RecruiterService {
     public boolean isRecruiterExists(String recruiterId) {
         return recruiterRepository.existsById(recruiterId);
     }
+    public boolean existEmail(String email)
+    {
+        return recruiterRepository.existsByEmail(email);
+    }
+
+    public Optional<Recruiter> findByEmail(String email) {
+       return recruiterRepository.findByEmail(email);
+    }
 }

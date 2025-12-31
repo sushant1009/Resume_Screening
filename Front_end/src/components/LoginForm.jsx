@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import api from '../config/axiosConfig'
 import { useNavigate } from "react-router-dom";
 import '../css/LoginForm.css';
 
@@ -25,15 +26,14 @@ const LoginForm = () => {
 
     try {
       // Call backend login API
-      const res = await axios.post(
-        "http://localhost:8080/api/auth/login",
+      const res = await api.post(
+        "/api/auth/login",
         form,
         {
           headers: { "Content-Type": "application/json" }
         }
       );
 
-      // Backend must return { token: "JWT_TOKEN", role: "USER/RECRUITER" }
       const { token, role } = res.data;
 
       if (!token || !role) {
@@ -88,6 +88,7 @@ const LoginForm = () => {
         />
 
         <button type="submit">Login</button>
+        <a href="/forgetpass">Forgot Password ?</a> <a href="/signup">Not a user</a>
 
         {error && <p style={{ color: "red", marginTop: "10px" }}>{error}</p>}
       </form>

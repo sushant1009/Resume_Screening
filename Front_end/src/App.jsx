@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ResumeUpload from './components/ResumeUpload';
+import ResumeUpload from './components/Student/ResumeUpload';
 import SignupForm from './components/SignupForm';
 import LoginForm from './components/LoginForm';
-import ResumePage from './components/ResumePage';
-import JobPost from './components/JobPost';
-import JobList  from './components/JobList'; 
-import ReceivedApplications from './components/ReceivedApplications';
+import ResumePage from './components/Student/ResumePage';
+import JobPost from './components/Recruiter/JobPost';
+import JobList  from './components/Student/JobList'; 
+import ReceivedApplications from './components/Recruiter/ReceivedApplications';
 import Navigation from './components/Navigation';
 import PrivateRoute from './components/PrivateRoute';
-import ApplyJob from './components/ApplyJob';
-import { dummyResumes } from './data/resumes';
+import MyApplications from './components/Student/MyApplications';
+import ApplyJob from './components/Student/ApplyJob';
 import './css/App.css'; 
+import Forgetpass from './components/Forgetpass';
 
 function App() {
-  const [resumes, setResumes] = useState(dummyResumes);
+  
 
   return (
     <Router>
@@ -27,6 +28,7 @@ function App() {
           {/* Public Routes */}
           <Route path="/login" element={<LoginForm />} />
           <Route path="/signup" element={<SignupForm />} />
+          <Route path="/forgetpass" element={<Forgetpass />} />
 
           {/* Student Routes */}
           <Route
@@ -73,6 +75,14 @@ function App() {
                   </PrivateRoute>
                 }
               />
+
+              <Route
+              path='/myapplications'
+              element={
+                <PrivateRoute allowedRoles={["STUDENT"]}>
+                <MyApplications/>
+                </PrivateRoute>
+              }/>
           
 
           <Route

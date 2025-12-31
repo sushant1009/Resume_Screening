@@ -93,6 +93,11 @@ public class ApplicationsService {
         return Optional.of(response);
     }
 
+    public Optional<List<Applications>> getApplicationsByUsername(String username)
+    {
+        return Optional.ofNullable(applicationRepository.findByUserUsername(username));
+    }
+
 
 }
 

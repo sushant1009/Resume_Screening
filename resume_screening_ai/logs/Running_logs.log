@@ -1663,3 +1663,18 @@ NameError: name 're' is not defined
  * Running on http://192.168.1.2:5001
 [2025-12-19 12:42:30,972] - INFO : _internal  : [33mPress CTRL+C to quit[0m
 [2025-12-19 12:45:33,796] - INFO : _internal  : 127.0.0.1 - - [19/Dec/2025 12:45:33] "POST /process_resume HTTP/1.1" 200 -
+[2025-12-23 22:37:11,490] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-12-23 22:37:11,502] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-12-23 22:37:27,268] - INFO : _internal  : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.6:5001
+[2025-12-23 22:37:27,268] - INFO : _internal  : [33mPress CTRL+C to quit[0m
+[2025-12-23 22:38:50,190] - INFO : _internal  : 127.0.0.1 - - [23/Dec/2025 22:38:50] "POST /process_resume HTTP/1.1" 200 -
+[2025-12-23 22:47:08,067] - INFO : SentenceTransformer  : Use pytorch device_name: cpu
+[2025-12-23 22:47:08,068] - INFO : SentenceTransformer  : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[2025-12-23 22:47:30,571] - INFO : _internal  : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.6:5001
+[2025-12-23 22:47:30,980] - INFO : _internal  : [33mPress CTRL+C to quit[0m

@@ -23,8 +23,10 @@ public class Job {
     @Column(nullable = false)
     private String role;
 
-    @Column(nullable = false)
+    @Column(columnDefinition = "TEXT",nullable = false)
     private String jobDescription;
+
+    private Long salary;
 
     @Column(nullable = false)
     private Integer noOpenings;
@@ -47,5 +49,12 @@ public class Job {
     @ManyToOne
     @JoinColumn(name = "username", nullable = false)
     private Recruiter recruiter;
+
+    @PrePersist
+    public void setDefaultSalary() {
+        if (salary == null) {
+            salary = Long.parseLong(String.valueOf('0')); // default salary
+        }
+    }
 
 }
